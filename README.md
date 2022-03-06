@@ -1,5 +1,9 @@
 # 🇨🇳 Awesome Web Scraping
 
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![jaywcjlove/sb](https://jaywcjlove.github.io/sb/lang/english.svg)](README.md)
+
+<a href="https://github.com/lorien/awesome-web-scraping" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="English version" style="height: 51px !important;width: 217px !important;" ></a>
+
 收集用于网络爬虫和数据处理的工具、编程库和网络服务的列表，会持续更新。
 
 ## 各个编程语言
