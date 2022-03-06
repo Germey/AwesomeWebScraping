@@ -1,438 +1,443 @@
-# Python Web Scraping
+# Python 网页抓取
 
-This list contains python libraries related to web scraping and data processing
+此列表包含与网络抓取和数据处理相关的 python 库
 
-## Contents
+## 内容
 
-* [Network](#network)
-* [Web Scraping](#web-scraping)
-* [HTML/XML](#htmlxml)
-* [Text processing](#text-processing)
-* [Structured Formats](#structured-formats)
-* [Serialization](#serialization)
-* [Natural Language Processing](#natural-language-processing)
-* [Browser automation](#browser-automation)
-* [Multiprocessing](#multiprocessing)
-* [Job Queue](#job-queue)
-* [Message Queue](#message-queue)
-* [Cloud Computing](#cloud-computing)
-* [Email](#email)
-* [URL and Network Address](#url-and-network-address)
-* [Web Content Extraction](#web-content-extraction)
-* [Asynchronous](#asynchronous)
-* [WebSocket](#websocket)
-* [DNS Resolving](#dns-resolving)
-* [Computer Vision](#computer-vision)
-* [Proxy Server](#proxy-server)
-* [Whois](#whois)
-* [Website Specific Scraper](#site-specific-scraper)
-* [JavaScript Engine Bindings](#javascript-engine-bindings)
-* [Other Python Lists](#other-python-lists)
+- [网络](#network)
+- [网页抓取](#web-scraping)
+- [HTML/XML](#htmlxml)
+- [文本处理](#text-processing)
+- [结构化格式](#structured-formats)
+- [序列化](#serialization)
+- [自然语言处理](#natural-language-processing)
+- [浏览器自动化](#browser-automation)
+- [多处理](#multiprocessing)
+- [作业队列](#job-queue)
+- [消息队列](#message-queue)
+- [云计算](#cloud-computing)
+- [电子邮件](#email)
+- [URL 和网络地址](#url-and-network-address)
+- [网页内容提取](#web-content-extraction)
+- [异步](#异步)
+- [WebSocket](#websocket)
+- [DNS 解析](#dns-resolving)
+- [计算机视觉](#computer-vision)
+- [代理服务器](#proxy-server)
+- [Whois](#whois)
+- [网站特定刮板](#site-specific-scraper)
+- [JavaScript 引擎绑定](#javascript-engine-bindings)
+- [其他 Python 列表](#other-python-lists)
 
-## Network
+＃＃ 网络
 
-### Network : General
+### 网络：一般
 
-* [urllib](https://docs.python.org/3.4/library/urllib.html?highlight=urllib#module-urllib) - network library (stdlib)
-* [requests](https://github.com/kennethreitz/requests) - network library
-* [grab](https://github.com/lorien/grab) - network library (pycurl based)
-* [pycurl](https://github.com/pycurl/pycurl) - network library (binding to [libcurl](http://curl.haxx.se/libcurl/))
-* [urllib3](https://github.com/shazow/urllib3) - Python HTTP library with thread-safe connection pooling, file post support, sanity friendly, and more.
-* [httplib2](https://github.com/httplib2/httplib2) - Small, fast HTTP client library. Features persistent connections, cache, and Google App Engine support.
-* [RoboBrowser](https://github.com/jmcarp/robobrowser) - A simple, Pythonic library for browsing the web without a standalone web browser.
-* [MechanicalSoup](https://github.com/hickford/MechanicalSoup) - A Python library for automating interaction with websites.
-* [mechanize](https://github.com/python-mechanize/mechanize) - Stateful programmatic web browsing.
-* [socket](https://docs.python.org/3/library/socket.html) low-level networking interface (stdlib)
-* [Unirest for Python](https://github.com/Mashape/unirest-python) - Unirest is a set of lightweight HTTP libraries available in multiple languages
-* [hyper](https://github.com/Lukasa/hyper) - HTTP/2 Client for Python
-* [PySocks](https://github.com/Anorov/PySocks) - Updated and actively maintained version of SocksiPy, with bug fixes and extra features. Acts as a drop-in replacement to the socket module.
+- [urllib](https://docs.python.org/3.4/library/urllib.html?highlight=urllib#module-urllib) - 网络库 (stdlib)
+- [请求](https://github.com/kennethreitz/requests) - 网络库
+- [grab](https://github.com/lorien/grab) - 网络库（基于 pycurl）
+- [pycurl](https://github.com/pycurl/pycurl) - 网络库（绑定到 [libcurl](http://curl.haxx.se/libcurl/)）
+- [urllib3](https://github.com/shazow/urllib3) - 具有线程安全连接池、文件发布支持、健全友好等的 Python HTTP 库。
+- [httplib2](https://github.com/httplib2/httplib2) - 小型、快速的 HTTP 客户端库。具有持久连接、缓存和 Google App Engine 支持。
+- [RoboBrowser](https://github.com/jmcarp/robobrowser) - 一个简单的 Pythonic 库，用于在没有独立 Web 浏览器的情况下浏览 Web。
+- [MechanicalSoup](https://github.com/hickford/MechanicalSoup) - 用于自动与网站交互的 Python 库。
+- [mechanize](https://github.com/python-mechanize/mechanize) - 有状态的程序化网页浏览。
+- [socket](https://docs.python.org/3/library/socket.html) 低级网络接口 (stdlib)
+- [Unirest for Python](https://github.com/Mashape/unirest-python) - Unirest 是一组轻量级的 HTTP 库，支持多种语言
+- [hyper](https://github.com/Lukasa/hyper) - Python 的 HTTP/2 客户端
+- [PySocks](https://github.com/Anorov/PySocks) - 更新和积极维护的 SocksiPy 版本，具有错误修复和额外功能。作为插座模块的直接替代品。
 
-### Network : Asynchronous
+### 网络：异步
 
-* [treq](https://github.com/dreid/treq) - requests like API (twisted based)
-* [aiohttp](https://github.com/KeepSafe/aiohttp) - http client/server for asyncio (PEP-3156)
+- [treq](https://github.com/dreid/treq) - API 之类的请求（基于扭曲）
+- [aiohttp](https://github.com/KeepSafe/aiohttp) - asyncio 的 http 客户端/服务器 (PEP-3156)
 
-### Network : Low Level
+### 网络：低级别
 
-* [dpkt](https://github.com/kbandla/dpkt) - fast, simple packet creation / parsing, with definitions for the basic TCP/IP protocols
-* [pyOpenSSL](https://github.com/pyca/pyopenssl) - A Python wrapper around the OpenSSL library
-* [tlslite-ng](https://github.com/tomato42/tlslite-ng) - TLS implementation in pure python
-* [scapy](https://github.com/secdev/scapy) - powerful Python-based interactive packet manipulation program and library
-* [impacket](https://github.com/SecureAuthCorp/impacket/) - low-level programmatic access to the packets of network protocols
+- [dpkt](https://github.com/kbandla/dpkt) - 快速、简单的数据包创建/解析，具有基本 TCP/IP 协议的定义
+- [pyOpenSSL](https://github.com/pyca/pyopenssl) - 一个围绕 OpenSSL 库的 Python 包装器
+- [tlslite-ng](https://github.com/tomato42/tlslite-ng) - 纯 python 中的 TLS 实现
+- [scapy](https://github.com/secdev/scapy) - 强大的基于 Python 的交互式数据包操作程序和库
+- [impacket](https://github.com/SecureAuthCorp/impacket/) - 对网络协议数据包的低级编程访问
 
-## Web Scraping
+##网页抓取
 
-### Web Scraping : Frameworks
+### 网页抓取：框架
 
-* [grab](https://grablab.org/docs/) - web-scraping framework (pycurl/multicurl based)
-* [scrapy](http://scrapy.org/) - web-scraping framework (twisted based).
-* [pyspider](https://github.com/binux/pyspider) - A powerful spider system.
-* [cola](https://github.com/chineking/cola) - A distributed crawling framework.
-* [ruia](https://github.com/howie6879/ruia) - Async Python 3.6+ web scraping micro-framework based on asyncio
-* [ioweb](https://github.com/lorien/ioweb) - Web scraping framework based on gevent and lxml
-* [autoscraper](https://github.com/alirezamika/autoscraper) - A smart, automatic and lightweight web scraper
-* [frontera](https://github.com/scrapinghub/frontera) - A scalable frontier for web crawlers
+- [grab](https://grablab.org/docs/) - 网络抓取框架（基于 pycurl/multicurl）
+- [scrapy](http://scrapy.org/) - 网络抓取框架（基于扭曲）。
+- [pyspider](https://github.com/binux/pyspider) - 一个强大的蜘蛛系统。
+- [cola](https://github.com/chineking/cola) - 一个分布式爬虫框架。
+- [ruia](https://github.com/howie6879/ruia) - 基于 asyncio 的异步 Python 3.6+网页抓取微框架
+- [ioweb](https://github.com/lorien/ioweb) - 基于 gevent 和 lxml 的网页抓取框架
+- [autoscraper](https://github.com/alirezamika/autoscraper) - 一个智能、自动、轻量级的网络爬虫
+- [frontera](https://github.com/scrapinghub/frontera) - 一个可扩展的网络爬虫前沿
 
+### 网页抓取：工具
 
-### Web Scraping : Tools
+- [portia](https://github.com/scrapinghub/portia) - Scrapy 的可视化抓取。
+- [restkit](https://github.com/benoitc/restkit) - Python 的 HTTP 资源工具包。它允许您轻松访问 HTTP 资源并围绕它构建对象。
+- [requests-html](https://github.com/kennethreitz/requests-html) - Pythonic HTML Parsing for Humans。
+- [ScrapydWeb](https://github.com/my8100/scrapydweb) - Scrapyd 集群管理的全功能 Web UI，支持 Scrapy 日志分析&可视化、自动打包、定时任务、邮件通知等。
+- [Starbelly](https://github.com/HyperionGray/starbelly) - Starbelly 是一个用户友好且高度可配置的网络爬虫前端。
+- [Gerapy](https://github.com/Gerapy/Gerapy) - 基于 Scrapy, Scrapyd, Django an 的分布式爬虫管理框架
 
-* [portia](https://github.com/scrapinghub/portia) - Visual scraping for Scrapy.
-* [restkit](https://github.com/benoitc/restkit) - HTTP resource kit for Python. It allows you to easily access to HTTP resource and build objects around it.
-* [requests-html](https://github.com/kennethreitz/requests-html) - Pythonic HTML Parsing for Humans.
-* [ScrapydWeb](https://github.com/my8100/scrapydweb) - A full-featured web UI for Scrapyd cluster management, which supports Scrapy Log Analysis & Visualization, Auto Packaging, Timer Tasks, Email Notice and so on.
-* [Starbelly](https://github.com/HyperionGray/starbelly) - Starbelly is a user-friendly and highly configurable web crawler front end.
-* [Gerapy](https://github.com/Gerapy/Gerapy) - Distributed Crawler Management Framework Based on Scrapy, Scrapyd, Django and Vue.js
+d Vue.js
 
-### Web Scraping : Bypass Protection
+### 网页抓取：绕过保护
 
-* [cloudscraper](https://github.com/venomous/cloudscraper) - A Python module to bypass Cloudflare's anti-bot page.
+- [cloudscraper](https://github.com/venomous/cloudscraper) - 绕过 Cloudflare 的反机器人页面的 Python 模块。
 
 ## HTML/XML
 
-### HTML/XML : General
+### HTML/XML : 一般
 
-* [lxml](https://github.com/lxml/lxml/) - effective HTML/XML processing library. Supports XPATH. Written in C.
-* [cssselect](https://github.com/scrapy/cssselect) - working with DOM tree with CSS selectors
-* [pyquery](https://github.com/gawel/pyquery) - working with DOM tree with jQuery-like selectors
-* [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) - slow HTML/XMl processing library, written in pure python
-* [html5lib](https://github.com/html5lib/html5lib-python) - builds DOM of HTML/XML document according to [WHATWG spec](url=http://www.whatwg.org/). That spec is used in all modern browsers.
-* [feedparser](https://github.com/kurtmckee/feedparser) - parsing of RSS/ATOM feeds.
-* [MarkupSafe](https://github.com/mitsuhiko/markupsafe) - Implements a XML/HTML/XHTML Markup safe string for Python.
-* [xmltodict](https://github.com/martinblech/xmltodict) - Working with XML feel like you are working with JSON.
-* [xhtml2pdf](https://github.com/chrisglass/xhtml2pdf) - HTML/CSS to PDF converter.
-* [untangle](https://github.com/stchris/untangle) - Converts XML documents to Python objects for easy access.
-* [hodor](https://github.com/CompileInc/hodor) - Configuration driven wrapper around lxml and cssselect.
-* [chopper](https://github.com/jurismarches/chopper) - Tool to extract a part from HTML page with corresponding CSS rules and preserving correct HTML.
-* [selectolax](https://github.com/rushter/selectolax) - Python bindings to Modest engine (fast HTML5 parser with CSS selectors).
-* [parsel](https://github.com/scrapy/parsel) - Lets you extract data from XML/HTML documents using XPath or CSS selectors.
-* [html5-parser](https://github.com/kovidgoyal/html5-parser) - Fast C based HTML 5 parsing for python.
-* [gazpacho](https://github.com/maxhumber/gazpacho/) - A simple, fast, and modern web scraping library. 
+- [lxml](https://github.com/lxml/lxml/) - 有效的 HTML/XML 处理库。支持 XPATH。写在 C 中。
+- [cssselect](https://github.com/scrapy/cssselect) - 使用带有 CSS 选择器的 DOM 树
+- [pyquery](https://github.com/gawel/pyquery) - 使用类 jQuery 选择器的 DOM 树
+- [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) - 慢速 HTML/XMl 处理库，纯 python 编写
+- [html5lib](https://github.com/html5lib/html5lib-python) - 根据 [WHATWG 规范](url=http://www.whatwg.org/) 构建 HTML/XML 文档的 DOM。该规范用于所有现代浏览器。
+- [feedparser](https://github.com/kurtmckee/feedparser) - 解析 RSS/ATOM 提要。
+- [MarkupSafe](https://github.com/mitsuhiko/markupsafe) - 为 Python 实现 XML/HTML/XHTML 标记安全字符串。
+- [xmltodict](https://github.com/martinblech/xmltodict) - 使用 XML 感觉就像使用 JSON。
+- [xhtml2pdf](https://github.com/chrisglass/xhtml2pdf) - HTML/CSS 到 PDF 转换器。
+- [untangle](https://github.com/stchris/untangle) - 将 XML 文档转换为 Python 对象以便于访问。
+- [hodor](https://github.com/CompileInc/hodor) - 围绕 lxml 和 cssselect 的配置驱动包装器。
+- [chopper](https://github.com/jurismarches/chopper) - 使用相应 CSS 规则从 HTML 页面中提取部分并保留正确 HTML 的工具。
+- [selectolax](https://github.com/rushter/selectolax) - Python 绑定到 Modest 引擎（带有 CSS 选择器的快速 HTML5 解析器）。
+- [parsel](https://github.com/scrapy/parsel) - 允许您使用 XPath 或 CSS 选择器从 XML/HTML 文档中提取数据。
+- [html5-parser](https://github.com/kovidgoyal/html5-parser) - 用于 python 的基于 C 的快速 HTML 5 解析。
+- [gazpacho](https://github.com/maxhumber/gazpacho/) - 一个简单、快速、现代的网络抓取库。
 
-### HTML/XML : Sanitizing
+### HTML/XML : 消毒
 
-* [Bleach](https://github.com/mozilla/bleach) - cleaning of HTML (requires html5lib)
-* [sanitize](https://github.com/Alir3z4/sanitize) - Bringing sanity to world of messed-up data.
+- [Bleach](https://github.com/mozilla/bleach) - HTML 的清理（需要 html5lib）
+- [sanitize](https://github.com/Alir3z4/sanitize) - 为混乱的数据世界带来理智。
 
-### HTML/XML : Metadata
+### HTML/XML：元数据
 
-* [extruct](https://github.com/scrapinghub/extruct) - A library for extracting embedded metadata from HTML markup.
+- [extruct](https://github.com/scrapinghub/extruct) - 用于从 HTML 标记中提取嵌入元数据的库。
 
-## Text Processing
+## 文本处理
 
-Libraries for parsing and manipulating plain texts.
+用于解析和操作纯文本的库。
 
-### Text Processing : General
+### 文本处理：一般
 
-* [difflib](https://docs.python.org/3/library/difflib.html) - (Python standard library) Helpers for computing deltas.
-* [Levenshtein](https://github.com/ztane/python-Levenshtein/) - Fast computation of Levenshtein distance and string similarity.
-* [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) - Fuzzy String Matching.
-* [esmre](https://code.google.com/p/esmre/) - Regular expression accelerator.
-* [ftfy](https://github.com/LuminosoInsight/python-ftfy) - Makes Unicode text less broken and more consistent automagically.
+- [difflib](https://docs.python.org/3/library/difflib.html) - （Python 标准库）计算增量的助手。
+- [Levenshtein](https://github.com/ztane/python-Levenshtein/) - 快速计算 Levenshtein 距离和字符串相似度。
+- [fuzzywuzzy](https://github.com/seatgeek/fuzzywuzzy) - 模糊字符串匹配。
+- [esmre](https://code.google.com/p/esmre/) - 正则表达式加速器。
+- [ftfy](https://github.com/LuminosoInsight/python-ftfy) - 自动减少 Unicode 文本的损坏和更一致。
 
-### Text Processing : Transliteration
+### 文本处理：音译
 
-* [unidecode](https://pypi.python.org/pypi/Unidecode) - ASCII transliterations of Unicode text.
+- [unidecode](https://pypi.python.org/pypi/Unidecode) - Unicode 文本的 ASCII 音译。
 
-### Text Processing : Character Encoding
+### 文本处理：字符编码
 
-* [uniout](https://github.com/moskytw/uniout) - Print readable chars instead of the escaped string.
-* [chardet](https://github.com/chardet/chardet) - Python 2/3 compatible character encoding detector.
-* [xpinyin](https://github.com/lxneng/xpinyin) - A library to translate Chinese hanzi (漢字) to pinyin (拼音).
-* [pangu.py](https://github.com/vinta/pangu.py) - Spacing texts for CJK and alphanumerics.
-* [cchardet](https://github.com/PyYoshi/cChardet) - cChardet is high speed universal character encoding detector. - binding to uchardet.
+- [uniout](https://github.com/moskytw/uniout) - 打印可读字符而不是转义字符串。
+- [chardet](https://github.com/chardet/chardet) - Python 2/3 兼容的字符编码检测器。
+- [xpinyin](https://github.com/lxneng/xpinyin) - 一个将汉字（汉字）翻译成拼音（拼音）的库。
+- [pangu.py](https://github.com/vinta/pangu.py) - CJK 和字母数字的间距文本。
+- [cchardet](https://github.com/PyYoshi/cChardet) - cChardet 是高速通用字符编码检测器。 - 绑定到 uchardet。
 
-### Text Processing : Slugify
+### 文本处理：Slugify
 
-* [awesome-slugify](https://github.com/dimka665/awesome-slugify) - A Python slugify library that can preserve unicode.
-* [python-slugify](https://github.com/un33k/python-slugify) - A Python slugify library that translates unicode to ASCII.
-* [unicode-slugify](https://github.com/mozilla/unicode-slugify) - A slugifier that generates unicode slugs.
-* [pytils](https://github.com/j2a/pytils) - Simple tools for processing strings in russian (including pytils.translit.slugify)
+- [awesome-slugify](https://github.com/dimka665/awesome-slugify) - 一个可以保存 unicode 的 Python slugify 库。
+- [python-slugify](https://github.com/un33k/python-slugify) - 一个将 unicode 转换为 ASCII 的 Python slugify 库。
+- [unicode-slugify](https://github.com/mozilla/unicode-slugify) - 生成 unicode slug 的 slugifier。
+- [pytils](https://github.com/j2a/pytils) - 处理俄语字符串的简单工具（包括 pytils.translit.slugify）
 
-### Text Processing : General Parser
+### 文本处理：通用解析器
 
-* [PLY](http://www.dabeaz.com/ply/) - Implementation of lex and yacc parsing tools for Python
-* [pyparsing](https://github.com/pyparsing/pyparsing) - A general purpose framework for generating parsers.
+- [PLY](http://www.dabeaz.com/ply/) - 用于 Python 的 lex 和 yacc 解析工具的实现
+- [pyparsing](https://github.com/pyparsing/pyparsing) - 用于生成解析器的通用框架。
 
-### Text Processing : Human Names
+### 文本处理：人名
 
-* [python-nameparser](https://github.com/derek73/python-nameparser) - Parsing human names into their individual components.
+- [python-nameparser](https://github.com/derek73/python-nameparser) - 将人名解析成各自的组成部分。
 
-### Text Processing : Phone Number
+### 文本处理：电话号码
 
-* [phonenumbers](https://github.com/daviddrysdale/python-phonenumbers) - Parsing, formatting, storing and validating international phone numbers.
+- [电话号码](https://github.com/daviddrysdale/python-phonenumbers) - 解析、格式化、存储和验证国际电话号码。
 
-### Text Processing :: User-Agent strings
+### 文本处理 :: 用户代理字符串
 
-* [HTTP Agent Parser](https://github.com/shon/httpagentparser) - Python HTTP Agent Parser
-* [uap-python](https://github.com/ua-parser/uap-python) - Python implementation of ua-parser
-* [python-user-agents](https://github.com/selwin/python-user-agents) - Browser user agent parser.
-* [fake-useragent](https://github.com/hellysmile/fake-useragent) - Python user agent string faker, based on world statistic of browsers
-* [user_agent](https://github.com/lorien/user_agent) - Generator of User-Agent data
+- [HTTP 代理解析器](https://github.com/shon/httpagentparser) - Python HTTP 代理解析器
+- [uap-python](https://github.com/ua-parser/uap-python) - ua-parser 的 Python 实现
+- [python-user-agents](https://github.com/selwin/python-user-agents) - 浏览器用户代理解析器。
+- [fake-useragent](https://github.com/hellysmile/fake-useragent) - Python 用户代理字符串伪造者，基于浏览器的世界统计数据
+- [user_agent](https://github.com/lorien/user_agent) - 用户代理数据生成器
 
-### Text Processing : robots.txt
+### 文本处理：robots.txt
 
-* [reppy](https://github.com/seomoz/reppy) - Modern robots.txt Parser for Python
-    
-### Text Processing :: Date and Time
+- [reppy](https://github.com/seomoz/reppy) - 适用于 Python 的现代 robots.txt 解析器
 
-* [dateutil](https://github.com/dateutil/dateutil) - Useful extensions to the standard Python datetime features
-* [dateparser](https://github.com/scrapinghub/dateparser) - python parser for human readable dates
-* [ciso8601](https://github.com/closeio/ciso8601) - converts ISO 8601 or RFC 3339 date time strings into Python datetime objects
+### 文本处理 :: 日期和时间
 
-### Text Processing :: Price and Currency
+- [dateutil](https://github.com/dateutil/dateutil) - 对标准 Python 日期时间功能的有用扩展
+- [dateparser](https://github.com/scrapinghub/dateparser) - 用于人类可读日期的 python 解析器
+- [ciso8601](https://github.com/closeio/ciso8601) - 将 ISO 8601 或 RFC 3339 日期时间字符串转换为 Python 日期时间对象
 
-* [price-parser](https://github.com/scrapinghub/price-parser) - a small library for extracting price and currency from raw text strings.
+### 文本处理 :: 价格和货币
 
-## Structured Formats
+- [price-parser](https://github.com/scrapinghub/price-parser) - 一个用于从原始文本字符串中提取价格和货币的小型库。
 
-Libraries for parsing and manipulating specific text formats.
+## 结构化格式
 
-### Structured Formats : General
+用于解析和操作特定文本格式的库。
 
-* [tablib](https://github.com/kennethreitz/tablib) - A module for Tabular Datasets in XLS, CSV, JSON, YAML.
-* [textract](https://github.com/deanmalmgren/textract) - Extract text from any document, Word, PowerPoint, PDFs, etc.
-* [messytables](https://github.com/okfn/messytables) - Tools for parsing messy tabular data
-* [rows](https://github.com/turicas/rows) - A common, beautiful interface to tabular data, no matter the format (currently CSV, HTML, XLS, TXT -- more coming!)
+### 结构化格式：一般
 
-### Structured Formats : Office
+- [tablib](https://github.com/kennethreitz/tablib) - XLS、CSV、JSON、YAML 格式的表格数据集模块。
+- [texttract](https://github.com/deanmalmgren/textract) - 从任何文档、Word、PowerPoint、PDF 等中提取文本。
+- [messytables](https://github.com/okfn/messytables) - 解析杂乱表格数据的工具
+- [rows](https://github.com/turicas/rows) - 一个通用的、漂亮的表格数据界面，无论格式如何（目前是 CSV、HTML、XLS、TXT - 更多！）
 
-* [python-docx](https://github.com/python-openxml/python-docx) - Reads, queries and modifies Microsoft Word 2007/2008 docx files.
-* [xlwt](https://github.com/python-excel/xlwt) / [xlrd](https://github.com/python-excel/xlrd) - Writing and reading data and formatting information from Excel files.
-* [XlsxWriter](https://xlsxwriter.readthedocs.org/) - A Python module for creating Excel .xlsx files.
-* [xlwings](http://xlwings.org/) - A BSD-licensed library that makes it easy to call Python from Excel and vice versa.
-* [openpyxl](https://openpyxl.readthedocs.org/en/latest/) - A library for reading and writing Excel 2010 xlsx/xlsm/xltx/xltm files.
-* [Marmir](https://github.com/brianray/mm) - Takes Python data structures and turns them into spreadsheets.
+### 结构化格式：办公室
 
-### Structured Formats : PDF
+- [python-docx](https://github.com/python-openxml/python-docx) - 读取、查询和修改 Microsoft Word 2007/2008 docx 文件。
+- [xlwt](https://github.com/python-excel/xlwt) / [xlrd](https://github.com/python-excel/xlrd) - 从 Excel 文件中写入和读取数据以及格式化信息。
+- [XlsxWriter](https://xlsxwriter.readthedocs.org/) - 用于创建 Excel .xlsx 文件的 Python 模块。
+- [xlwings](http://xlwings.org/) - 一个 BSD 许可的库，可以轻松地从 Excel 调用 Python，反之亦然。
+- [openpyxl](https://openpyxl.readthedocs.org/en/latest/) - 用于读写 Excel 2010 xlsx/xlsm/xltx/xltm 文件的库。
+- [Marmir](https://github.com/brianray/mm) - 采用 Python 数据结构并将它们转换为电子表格。
 
-* [PDFMiner](https://github.com/euske/pdfminer) - A tool for extracting information from PDF documents.
-* [PyPDF2](https://github.com/mstamy2/PyPDF2) - A library capable of splitting, merging and transforming PDF pages.
-* [ReportLab](http://www.reportlab.com/opensource/) - Allowing Rapid creation of rich PDF documents.
-* [pdftables](https://pypi.python.org/pypi/pdftables) - Extract tables from PDF files directly
+### 结构化格式：PDF
 
-### Structured Formats : Markdown
+- [PDFMiner](https://github.com/euske/pdfminer) - 从 PDF 文档中提取信息的工具。
+- [PyPDF2](https://github.com/mstamy2/PyPDF2) - 一个能够拆分、合并和转换 PDF 页面的库。
+- [ReportLab](http://www.reportlab.com/opensource/) - 允许快速创建丰富的 PDF 文档。
+- [pdftables](https://pypi.python.org/pypi/pdftables) - 直接从 PDF 文件中提取表格
 
-* [Python-Markdown](https://github.com/waylan/Python-Markdown) - A Python implementation of John Gruber’s Markdown.
-* [Mistune](https://github.com/lepture/mistune) - Fastest and full featured pure Python parsers of Markdown.
-* [markdown2](https://pypi.python.org/pypi/markdown2) - A fast and complete Python implementation of Markdown
-* [mistletoe](https://github.com/miyuchina/mistletoe) - A fast, extensible and spec-compliant Markdown parser in pure Python
+### 结构化格式：Markdown
 
-### Structured Formats : YAML
+- [Python-Markdown](https://github.com/waylan/Python-Markdown) - John Gruber 的 Markdown 的 Python 实现。
+- [Mistune](https://github.com/lepture/mistune) - 最快且功能齐全的 Markdown 纯 Python 解析器。
+- [markdown2](https://pypi.python.org/pypi/markdown2) - Markdown 的快速且完整的 Python 实现
+- [mistletoe](https://github.com/miyuchina/mistletoe) - 在纯 Python 中快速、可扩展且符合规范的 Markdown 解析器
 
-* [PyYAML](https://github.com/yaml/pyyaml) - YAML implementations for Python.
+### 结构化格式：YAML
 
-### Structured Formats : CSS
+- [PyYAML](https://github.com/yaml/pyyaml) - Python 的 YAML 实现。
 
-* [cssutils](https://pypi.python.org/pypi/cssutils/) - A CSS library for Python.
+### 结构化格式：CSS
 
-### Structured Formats : ATOM/RSS
+- [cssutils](https://pypi.python.org/pypi/cssutils/) - Python 的 CSS 库。
 
-* [feedparser](http://pythonhosted.org/feedparser/) - Universal feed parser.
+### 结构化格式：ATOM/RSS
 
-### Structured Formats : SQL
+- [feedparser](http://pythonhosted.org/feedparser/) - 通用提要解析器。
 
-* [sqlparse](https://sqlparse.readthedocs.org/) - A non-validating SQL parser.
+### 结构化格式：SQL
 
-### Structured Formats : HTTP
+- [sqlparse](https://sqlparse.readthedocs.org/) - 一个非验证 SQL 解析器。
 
-* [http-parser](https://github.com/benoitc/http-parser) - HTTP request/response parser for python in C
-* [httptools](https://github.com/MagicStack/httptools) - a Python binding for nodejs HTTP parser
+### 结构化格式：HTTP
 
-### Structured Formats : Microformats
+- [http-parser](https://github.com/benoitc/http-parser) - C 中 python 的 HTTP 请求/响应解析器
+- [httptools](https://github.com/MagicStack/httptools) - nodejs HTTP 解析器的 Python 绑定
 
-* [opengraph](https://github.com/erikriver/opengraph) - A Python module to parse the Open Graph Protocol tags
+### 结构化格式：微格式
 
-### Structured Formats :  Portable Executable
+- [opengraph](https://github.com/erikriver/opengraph) - 解析开放图协议标签的 Python 模块
 
-*  [pefile](https://github.com/erocarrera/pefile) - A multi-platform module to parse and work with Portable Executable (aka PE) files.
+### 结构化格式：可移植的可执行文件
 
-### Structured Formats : PSD
+- [pefile](https://github.com/erocarrera/pefile) - 一个多平台模块，用于解析和使用可移植可执行文件（又名 PE）文件。
 
-* [psd-tools](https://github.com/kmike/psd-tools) - reading Adobe Photoshop PSD files (as described in [specification](https://www.adobe.com/devnet-apps/photoshop/fileformatashtml/PhotoshopFileFormats.htm)) to Python data structures.
+### 结构化格式：PSD
 
-### Structured Formats : Bookmarks File
+- [psd-tools](https://github.com/kmike/psd-tools) - 读取 Adob​​e Photoshop PSD 文件（如 [规范](https://www.adobe.com/devnet-apps/photoshop) 中所述/fileformatashtml/PhotoshopFileFormats.htm)) 到 Python 数据结构。
 
-* [bookmarks-parser](https://github.com/bookmarks-tools/bookmarks-parser) - Parses Firefox/Chrome HTML bookmarks files
+### 结构化格式：书签文件
 
-## Serialization
+- [bookmarks-parser](https://github.com/bookmarks-tools/bookmarks-parser) - 解析 Firefox/Chrome HTML 书签文件
 
-* [orjson](https://github.com/ijl/orjson) - Fast, correct Python JSON library supporting dataclasses and datetimes
-* [ujson](https://github.com/esnme/ultrajson) - Ultra fast JSON decoder and encoder written in C with Python bindings
+## 序列化
 
-## Natural Language Processing
+- [orjson](https://github.com/ijl/orjson) - 支持数据类和日期时间的快速、正确的 Python JSON 库
+- [ujson](https://github.com/esnme/ultrajson) - 用 C 语言编写的超快速 JSON 解码器和编码器，带有 Python 绑定
 
-Libraries for working with human languages.
+## 自然语言处理
 
-* [NLTK](http://www.nltk.org/) - A leading platform for building Python programs to work with human language data.
-* [spacy](https://github.com/explosion/spaCy) - Enables using State-of-the-Art Deep Learning models for common NLP tasks.
-* [fastai](https://github.com/fastai/fastai) - Deep Learning library with free video tutorials + active forum community, downside of lib: GPU needed
-* [gensim](https://github.com/RaRe-Technologies/gensim) -  library for topic modeling, document indexing and similarity retrieval with large corpora
-* [Pattern](http://www.clips.ua.ac.be/pattern) - A web mining module for the Python. It has tools for natural language processing, machine learning, among others.
-* [TextBlob](http://textblob.readthedocs.org/) - Providing a consistent API for diving into common NLP tasks. Stands on the giant shoulders of NLTK and Pattern.
-* [jieba](https://github.com/fxsjy/jieba) - Chinese Words Segmentation Utilities.
-* [SnowNLP](https://github.com/isnowfy/snownlp) - A library for processing Chinese text.
-* [loso](https://github.com/victorlin/loso) - Another Chinese segmentation library.
-* [genius](https://github.com/duanhongyi/genius) - A Chinese segment base on Conditional Random Field.
-* [langid.py](https://github.com/saffsd/langid.py) - Stand-alone language identification system.
-* [Korean](https://korean.readthedocs.org/) - A library for [Korean](http://en.wikipedia.org/wiki/Korean_language) morphology.
-* [pymorphy2](https://github.com/kmike/pymorphy2) - Morphological analyzer (POS tagger + inflection engine) for Russian language.
-* [PyPLN](https://github.com/NAMD/pypln.backend) - A distributed pipeline for natural language processing, made in Python. he goal of the project is to create an easy way to use NLTK for processing big corpora, with a Web interface.
-* [langdetect](https://github.com/Mimino666/langdetect) - Port of Google's language-detection library to Python
+用于处理人类语言的库。
 
-## Browser Automation
+- [NLTK](http://www.nltk.org/) - 用于构建 Python 程序以处理人类语言数据的领先平台。
+- [spacy](https://github.com/explosion/spaCy) - 允许使用最先进的深度学习模型来完成常见的 NLP 任务。
+- [fastai](https://github.com/fastai/fastai) - 带有免费视频教程 + 活跃论坛社区的深度学习库，lib 的缺点：需要 GPU
+- [gensim](https://github.com/RaRe-Technologies/gensim) - 用于主题建模、文档索引和大型语料库相似性检索的库
+- [Pattern](http://www.clips.ua.ac.be/pattern) - Python 的网络挖掘模块。它具有用于自然语言处理、机器学习等的工具。
+- [TextBlob](http://textblob.readthedocs.org/) - 为深入研究常见的 NLP 任务提供一致的 API。站在 NLTK 和 Pattern 的巨大肩膀上。
+- [jieba](https://github.com/fxsjy/jieba) - 中文分词工具。
+- [SnowNLP](https://github.com/isnowfy/snownlp) - 处理中文文本的库。
+- [loso](https://github.com/victorlin/loso) - 另一个中文分词库。
+- [genius](https://github.com/duanhongyi/genius) - 基于条件随机场的中文片段。
+- [langid.py](https://github.com/saffsd/langid.py) - 独立的语言识别系统。
+- [韩语](https://korean.readthedocs.org/) - [韩语](http://en.wikipedia.org/wiki/Korean_language) 形态学库。
+- [pymorphy2](https://github.com/kmike/pymorphy2) - 俄语的形态分析器（POS 标记器 + 变形引擎）。
+- [PyPLN](https://github.com/NAMD/pypln.backend) - 用于自然语言处理的分布式管道，用 Python 制作。该项目的目标是创建一种使用 NLTK 处理大型语料库的简单方法，并带有 Web 界面。
+- [langdetect](https://github.com/Mimino666/langdetect) - Google 语言检测库到 Python 的端口
 
-### Browser Automation : Browsers
+## 浏览器自动化
 
-* [selenium](http://selenium-python.readthedocs.io/) - automating real browsers (Chrome, Firefox, Opera, IE)
-* [Ghost.py](http://carrerasrodrigo.github.io/Ghost.py/) - wrapper of QtWebKit (requires PyQT)
-* [Spynner](https://github.com/makinacorpus/spynner) - wrapper of QtWebKit QtWebKit (requires PyQT)
-* [Splinter](https://github.com/cobrateam/splinter) - universal API to browser emulators (selenium webdrivers, django client, zope)
-* [Requestium](https://github.com/tryolabs/requestium) - Integration layer between Requests and Selenium for automation of web actions.
-* [Splash](https://github.com/scrapinghub/splash) - Lightweight, scriptable browser as a service with an HTTP API.
-* [pyppeteer](https://github.com/miyakogi/pyppeteer) - Headless chrome/chromium automation library (unofficial port of puppeteer)
-* [Playwright](https://github.com/microsoft/playwright-python) - Playwright is a Python library to automate Chromium, Firefox and WebKit browsers with a single API
-* [seleniumbase](https://github.com/seleniumbase/SeleniumBase) - Python framework for Web/UI testing + RPA. 🤖 🏰 Fast, easy, and reliable.
+### 浏览器自动化：浏览器
 
-### Browser Automation : Tools
+- [selenium](http://selenium-python.readthedocs.io/) - 自动化真实浏览器（Chrome、Firefox、Opera、IE）
+- [Ghost.py](http://carrerasrodrigo.github.io/Ghost.py/) - QtWebKit 的包装器（需要 PyQT）
+- [Spynner](https://github.com/makinacorpus/spynner) - QtWebKit QtWebKit 的包装器（需要 PyQT）
+- [Splinter](https://github.com/cobrateam/splinter) - 浏览器模拟器的通用 API (selenium webdrivers, django client, zope)
+- [Requestium](https://github.com/tryolabs/requestium) - Requests 和 Selenium 之间的集成层，用于 Web 操作的自动化。
+- [Splash](https://github.com/scrapinghub/splash) - 具有 HTTP API 的轻量级、可编写脚本的浏览器即服务。
+- [pyppeteer](https://github.com/miyakogi/pyppeteer) - 无头 chrome/chromium 自动化库（puppeteer 的非官方端口）
+- [Playwright](https://github.com/microsoft/playwright-python) - Playwright 是一个 Python 库，可通过单个 API 自动化 Chromium、Firefox 和 WebKit 浏览器
+- [seleniumbase](https://github.com/seleniumbase/SeleniumBase) - 用于 Web/UI 测试 + RPA 的 Python 框架。 🤖 🏰 快速、简单、可靠。
 
-* [xvfbwrapper](https://github.com/cgoldberg/xvfbwrapper) - Python wrapper for running a display inside X virtual framebuffer (Xvfb)
+### 浏览器自动化：工具
 
-## Multiprocessing
+- [xvfbwrapper](https://github.com/cgoldberg/xvfbwrapper) - 用于在 X 虚拟帧缓冲区 (Xvfb) 中运行显示的 Python 包装器
 
-* [threading](http://docs.python.org/3/library/threading.html) - standard python library to run threads. Effective for I/O-bound tasks. Useless for CPU-bound tasks because of python GIL.
-* [multiprocessing](http://docs.python.org/3/library/multiprocessing.html) - standard python library to run processes.
-* [concurrent-futures](https://docs.python.org/3/library/concurrent.futures.html) - The concurrent.futures module provides a high-level interface for asynchronously executing callables.
+## 多处理
 
-## Asynchronous
+- [线程](http://docs.python.org/3/library/threading.html) - 运行线程的标准 python 库。对 I/O 密集型任务有效。由于 python GIL，对 CPU 密集型任务无用。
+- [multiprocessing](http://docs.python.org/3/library/multiprocessing.html) - 运行进程的标准 python 库。
+- [concurrent-futures](https://docs.python.org/3/library/concurrent.futures.html) - concurrent.futures 模块为异步执行可调用对象提供高级接口。
 
-Libraries for asynchronous networking programming.
+## 异步
 
-* [asyncio](https://docs.python.org/3/library/asyncio.html) - (Python standard library in Python 3.4+) Asynchronous I/O, event loop, coroutines and tasks.
-* [Twisted](https://twistedmatrix.com/trac/) - An event-driven networking engine.
-* [Tornado](http://www.tornadoweb.org/) - A Web framework and asynchronous networking library.
-* [pulsar](https://github.com/quantmind/pulsar) - Event-driven concurrent framework for Python.
-* [diesel](https://github.com/jamwt/diesel) - Greenlet-based event I/O Framework for Python.
-* [gevent](http://www.gevent.org/) - A coroutine-based Python networking library that uses [greenlet](https://github.com/python-greenlet/greenlet).
-* [eventlet](http://eventlet.net/) - Asynchronous framework with WSGI support.
-* [Tomorrow](https://github.com/madisonmay/Tomorrow) - Magic decorator syntax for asynchronous code.
-* [grequests](https://github.com/kennethreitz/grequests) - Make asynchronous HTTP Requests easily.
+用于异步网络编程的库。
 
-## Job Queue
+- [asyncio](https://docs.python.org/3/library/asyncio.html) - （Python 3.4+ 中的 Python 标准库）异步 I/O、事件循环、协程和任务。
+- [Twisted](https://twistedmatrix.com/trac/) - 一个事件驱动的网络引擎。
+- [Tornado](http://www.tornadoweb.org/) - 一个 Web 框架和异步网络库。
+- [pulsar](https://github.com/quantmind/pulsar) - Python 的事件驱动并发框架。
+- [diesel](https://github.com/jamwt/diesel) - 基于 Greenlet 的 Python 事件 I/O 框架。
+- [gevent](http://www.gevent.org/) - 一个使用 [greenlet](https://github.com/python-greenlet/greenlet) 的基于协程的 Python 网络库。
+- [eventlet](http://eventlet.net/) - 支持 WSGI 的异步框架。
+- [明天](https://github.com/madisonmay/Tomorrow) - 异步代码的魔术装饰器语法。
+- [grequests](https://github.com/kennethreitz/grequests) - 轻松制作异步 HTTP 请求。
 
-* [celery](http://www.celeryproject.org/) - An asynchronous task queue/job queue based on distributed message passing.
-* [huey](https://github.com/coleifer/huey) - Little multi-threaded task queue.
-* [mrq](https://github.com/pricingassistant/mrq) - Mr. Queue - A distributed worker task queue in Python using Redis & gevent.
-* [RQ](https://github.com/rq/rq) - lightweight task queue manager based on redis
-* [simpleq](https://github.com/rdegges/simpleq) - A simple, infinitely scalable, Amazon SQS based queue.
-* [python-gearman](https://github.com/Yelp/python-gearman) - python API for Gearman
+## 作业队列
 
-## Message Queue
+- [芹菜](http://www.celeryproject.org/) - 基于分布式消息传递的异步任务队列/作业队列。
+- [huey](https://github.com/coleifer/huey) - 小的多线程任务队列。
+- [mrq](https://github.com/pricingassistant/mrq) - Mr. Queue - Python 中使用 Redis 和 gevent 的分布式工作任务队列。
+- [RQ](https://github.com/rq/rq) - 基于 redis 的轻量级任务队列管理器
+- [simpleq](https://github.com/rdegges/simpleq) - 一个简单、无限可扩展、基于 Amazon SQS 的队列。
+- [python-gearman](https://github.com/Yelp/python-gearman) - Gearman 的 python API
 
-* [kombu](https://github.com/celery/kombu) - Messaging library for Python
+## 消息队列
 
-## Cloud Computing
+- [kombu](https://github.com/celery/kombu) - Python 的消息传递库
 
-* [picloud](http://docs.picloud.com/) - executing python-code in cloud
-* [dominoup.com](http://www.dominoup.com/) - executing R, Python и matlab code in cloud
-* [minigun-requests](https://github.com/umihico/minigun-requests) - Web scraping API to outsource tons of GET & xpath to cloud computing
-* [pythonista-chromeless](https://github.com/umihico/pythonista-chromeless) - AWS lambda which execute given python code on selenium
+＃＃ 云计算
 
-## Email
+- [picloud](http://docs.picloud.com/) - 在云端执行 python 代码
+- [dominoup.com](http://www.dominoup.com/) - 在云端执行 R、Python 和 matlab 代码
+- [minigun-requests](https://github.com/umihico/minigun-requests) - Web 抓取 API 将大量 GET 和 xpath 外包给云计算
+- [pythonista-chromeless](https://github.com/umihico/pythonista-chromeless) - 在 selenium 上执行给定 python 代码的 AWS lambda
 
-Libraries for parsing email.
+＃＃ 电子邮件
 
-* [flanker](https://github.com/mailgun/flanker) - A email address and Mime parsing library.
-* [Talon](https://github.com/mailgun/talon) - Mailgun library to extract message quotations and signatures.
+用于解析电子邮件的库。
 
-## URL and Network Address
+- [flanker](https://github.com/mailgun/flanker) - 一个电子邮件地址和 Mime 解析库。
+- [Talon](https://github.com/mailgun/talon) - Mailgun 库，用于提取消息引用和签名。
 
-Libraries for parsing/modifying URLs, network addresses, domain names.
+## URL 和网络地址
 
-### URL and Network Address : URL
+用于解析/修改 URL、网络地址、域名的库。
 
-* [furl](https://github.com/gruns/furl) - A small Python library that makes manipulating URLs simple.
-* [purl](https://github.com/codeinthehole/purl) - A simple, immutable URL class with a clean API for interrogation and manipulation.
-* [urllib.parse](https://docs.python.org/3/library/urllib.parse.html) - interface to break Uniform Resource Locator (URL) strings up in components (addressing scheme, network location, path etc.), to combine the components back into a URL string, and to convert a “relative URL” to an absolute URL given a “base URL.” (stdlib)
+### URL 和网络地址：URL
 
-### URL and Network Address : Network Address
+- [furl](https://github.com/gruns/furl) - 一个小型 Python 库，使操作 URL 变得简单。
+- [purl](https://github.com/codeinthehole/purl) - 一个简单的、不可变的 URL 类，具有用于询问和操作的干净 API。
+- [urllib.parse](https://docs.python.org/3/library/urllib.parse.html) - 在组件（寻址方案、网络位置、路径等）中分解统一资源定位器（URL）字符串的接口.)，将组件组合回 URL 字符串，并在给定“基本 URL”的情况下将“相对 URL”转换为绝对 URL。 （标准库）
 
-* [netaddr](https://github.com/drkjam/netaddr) - A Python library for representing and manipulating network addresses.
-* [micawber](https://github.com/coleifer/micawber) - A small library for extracting rich content from URLs.
+### URL 和网络地址：网络地址
 
-### Domain Names
+- [netaddr](https://github.com/drkjam/netaddr) - 一个用于表示和操作网络地址的 Python 库。
+- [micawber](https://github.com/coleifer/micawber) - 一个用于从 URL 中提取丰富内容的小型库。
 
-* [tldextract](https://github.com/john-kurkowski/tldextract) - Accurately separate the TLD from the registered domain and subdomains of a URL, using the Public Suffix List.
-* [find_domains](https://github.com/lorien/find_domains) - a library to search for domain names in text data
+＃＃＃ 域名
 
-## Web Content Extraction
+- [tldextract](https://github.com/john-kurkowski/tldextract) - 使用公共后缀列表准确地将 TLD 与 URL 的注册域和子域分开。
+- [find_domains](https://github.com/lorien/find_domains) - 在文本数据中搜索域名的库
 
-Libraries for extracting web contents.
+## 网页内容提取
 
-* [newspaper](https://github.com/codelucas/newspaper) - News extraction, article extraction and content curation in Python.
-* [python-goose](https://github.com/grangier/python-goose) - HTML Content/Article Extractor.
-* [scrapely](https://github.com/scrapy/scrapely) - Library for extracting structured data from HTML pages. Given some example web pages and the data to be extracted, scrapely constructs a parser for all similar pages.
-* [htmldate](https://github.com/adbar/htmldate) - Find creation date using common structural patterns or text-based heuristics.
-* [lassie](https://github.com/michaelhelmick/lassie) - Web Content Retrieval for Humans.
-* [html2text](https://github.com/Alir3z4/html2text) - Convert HTML to Markdown-formatted text.
-* [libextract](https://github.com/datalib/libextract) - Extract data from websites.
-* [python-readability](https://github.com/buriy/python-readability) - Fast Python port of arc90's readability tool.
-* [sumy](https://github.com/miso-belica/sumy) - A module for automatic summarization of text documents and HTML pages.
-* [Haul](https://github.com/vinta/Haul) - An Extensible Image Crawler.
-* [you-get](http://www.soimort.org/you-get/) - A YouTube/Youku/Niconico video downloader written in Python 3.
-* [youtube-dl](http://rg3.github.io/youtube-dl/) - A small command-line program to download videos from YouTube.
-* [WikiTeam](https://github.com/WikiTeam/wikiteam) - Tools for downloading and preserving wikis.
-* [linkchecker](https://github.com/wummel/linkchecker) - check links in web documents or full websites
-* [python-sitemap](https://github.com/c4software/python-sitemap) - Mini website crawler to make sitemap from a website.
-* [trafilatura](https://github.com/adbar/trafilatura) - Fast extraction of main text and comments along with structure, conversion to TXT, CSV & XML.
-* [advertools](https://github.com/eliasdabbas/advertools) - A customizable crawler to analyze SEO and content of pages and websites.
-* [photon](https://github.com/s0md3v/Photon) - Incredibly fast crawler designed for OSINT
-* [extractnet](https://github.com/currentsapi/extractnet) - Machine Learning based content and metadata extraction in Python 3
+用于提取 Web 内容的库。
 
-## WebSocket
+- [newspaper](https://github.com/codelucas/newspaper) - Python 中的新闻提取、文章提取和内容管理。
+- [python-goose](https://github.com/grangier/python-goose) - HTML 内容/文章提取器。
+- [scrapely](https://github.com/scrapy/scrapely) - 用于从 HTML 页面中提取结构化数据的库。给定一些示例网页和要提取的数据，为所有相似页面构建解析器。
+- [htmldate](https://github.com/adbar/htmldate) - 使用常见的结构模式或基于文本的启发式查找创建日期。
+- [lassie](https://github.com/michaelhelmick/lassie) - 人类的 Web 内容检索。
+- [html2text](https://github.com/Alir3z4/html2text) - 将 HTML 转换为 Markdown 格式的文本。
+- [libextract](https://github.com/datalib/libextract) - 从网站中提取数据。
+- [python-readability](https://github.com/buriy/python-readability) - arc90 可读性工具的快速 Python 端口。
+- [sumy](https://github.com/miso-belica/sumy) - 用于自动汇总文本文档和 HTML 页面的模块。
+- [Haul](https://github.com/vinta/Haul) - 可扩展的图像爬虫。
+- [you-get](http://www.soimort.org/you-get/) - 一个用 Python 3 编写的 YouTube/Youku/Niconico 视频下载器。
+- [youtube-dl](http://rg3.github.io/youtube-dl/) - 从 YouTube 下载视频的小型命令行程序。
+- [WikiTeam](https://github.com/WikiTeam/wikiteam) - 下载和保存 wiki 的工具。
+- [linkchecker](https://github.com/wummel/linkchecker) - 检查网络文档或完整网站中的链接
+- [python-sitemap](https://github.com/c4software/python-sitemap) - 从网站制作站点地图的迷你网站爬虫。
+- [trafilatura](https://github.com/adbar/trafilatura) - 快速提取正文和评论以及结构，转换为 TXT、CSV 和 XML。
+- [advertools](https://github.com/eliasdabbas/advertools) - 一个可定制的爬虫，用于分析 SEO 以及页面和网站的内容。
+- [photon](https://github.com/s0md3v/Photon) - 为 OSINT 设计的令人难以置信的快速爬虫
+- [extractnet](https://github.com/currentsapi/extractnet) - Python 3 中基于机器学习的内容和元数据提取
 
-Libraries for working with WebSocket.
+## 网络套接字
 
-* [Crossbar](https://github.com/crossbario/crossbar/) - Open-source Unified Application Router (Websocket & WAMP for Python on Autobahn).
-* [AutobahnPython](https://github.com/tavendo/AutobahnPython) - WebSocket & WAMP for Python on Twisted and [asyncio](https://docs.python.org/3/library/asyncio.html).
-* [WebSocket-for-Python](https://github.com/Lawouach/WebSocket-for-Python) - WebSocket client and server library for Python 2 and 3 as well as PyPy.
+用于使用 WebSocket 的库。
 
-## DNS Resolving
+- [Crossbar](https://github.com/crossbario/crossbar/) - 开源统一
 
-* [dnspython](https://github.com/rthalley/dnspython) - a powerful DNS toolkit for python
-* [dnsyo](https://github.com/samarudge/dnsyo) - Check your DNS against over 1500 global DNS servers.
-* [pycares](https://github.com/saghul/pycares) -  interface to c-ares. c-ares is a C library that performs DNS requests and name resolutions asynchronously
+d 应用程序路由器（用于高速公路上的 Python 的 Websocket 和 WAMP）。
 
-## Computer Vision
+- [AutobahnPython](https://github.com/tavendo/AutobahnPython) - Twisted 和 [asyncio](https://docs.python.org/3/library/asyncio.html) 上用于 Python 的 WebSocket 和 WAMP。
+- [WebSocket-for-Python](https://github.com/Lawouach/WebSocket-for-Python) - Python 2 和 3 以及 PyPy 的 WebSocket 客户端和服务器库。
 
-* [OpenCV](https://github.com/Itseez/opencv) - Open Source Computer Vision Library.
-* [SimpleCV](https://github.com/sightmachine/SimpleCV) - Concise, readable interface for cameras, image manipulation, feature extraction, and format conversion (based on OpenCV).
-* [mahotas](https://github.com/luispedro/mahotas) - fast computer vision algorithms (all implemented in C++) operating over numpy arrays.
+## DNS 解析
 
-## Proxy Server
+- [dnspython](https://github.com/rthalley/dnspython) - 一个强大的 python DNS 工具包
+- [dnsyo](https://github.com/samarudge/dnsyo) - 对照 1500 多个全球 DNS 服务器检查您的 DNS。
+- [pycares](https://github.com/saghul/pycares) - 与 c-ares 的接口。 c-ares 是一个异步执行 DNS 请求和名称解析的 C 库
 
-* [scylla](https://github.com/imWildCat/scylla) - Intelligent proxy pool for Humans
-* [ProxyBroker](https://github.com/constverum/Proxybroker) - Proxy [Finder | Checker | Server]. HTTP(S) & SOCKS
-* [shadowsocks](https://github.com/shadowsocks/shadowsocks) - A fast tunnel proxy that helps you bypass firewalls (TCP & UDP support, User management API, TCP Fast Open, Workers and graceful restart, Destination IP blacklist)
-* [tproxy](https://github.com/benoitc/tproxy) - tproxy is a simple TCP routing proxy (layer 7) built on Gevent that lets you configure the routine logic in Python
-  
-## Whois
+＃＃ 计算机视觉
 
-* [python-whois](https://github.com/joepie91/python-whois) - A python module for retrieving and parsing WHOIS data
+- [OpenCV](https://github.com/Itseez/opencv) - 开源计算机视觉库。
+- [SimpleCV](https://github.com/sightmachine/SimpleCV) - 简洁、易读的相机接口、图像处理、特征提取和格式转换（基于 OpenCV）。
+- [mahotas](https://github.com/luispedro/mahotas) - 在 numpy 数组上运行的快速计算机视觉算法（全部用 C++ 实现）。
 
-## Website Specific Scraper
-* [twitter-scraper](https://github.com/bisguzar/twitter-scraper) - Scrape the Twitter Frontend API without authentication
-* [Ultimate-Facebook-Scraper](https://github.com/harismuneer/Ultimate-Facebook-Scraper) - A bot which scrapes almost everything about a Facebook user's profile
-* [instagram-scraper](https://github.com/rarcega/instagram-scraper) - Scrapes an instagram user's photos and videos
+＃＃ 代理服务器
 
-## JavaScript Engine Bindings
+- [scylla](https://github.com/imWildCat/scylla) - 人类智能代理池
+- [ProxyBroker](https://github.com/constverum/Proxybroker) - 代理 [Finder |检查器 |服务器]。 HTTP(S) 和袜子
+- [shadowsocks](https://github.com/shadowsocks/shadowsocks) - 帮助您绕过防火墙的快速隧道代理（TCP 和 UDP 支持、用户管理 API、TCP 快速打开、Worker 和优雅重启、目标 IP 黑名单）
+- [tproxy](https://github.com/benoitc/tproxy) - tproxy 是一个基于 Gevent 的简单 TCP 路由代理（第 7 层），可让您在 Python 中配置例程逻辑
 
-* [Js2Py](https://github.com/PiotrDabkowski/Js2Py) - JavaScript to Python Translator & JavaScript interpreter written in 100% pure Python
-* [v8eval](https://github.com/sony/v8eval/) - Multi-language bindings to JavaScript engine V8
+＃＃ 谁是
 
-## Other python lists
+- [python-whois](https://github.com/joepie91/python-whois) - 用于检索和解析 WHOIS 数据的 python 模块
 
-* [awesome-python](https://github.com/vinta/awesome-python)
-* [pycrumbs](https://github.com/kirang89/pycrumbs)
-* [python-github-projects](https://github.com/checkcheckzz/python-github-projects)
-* [python_reference](https://github.com/rasbt/python_reference)
-* [pythonidae](https://github.com/svaksha/pythonidae)
+## 网站特定刮板
+
+- [twitter-scraper](https://github.com/bisguzar/twitter-scraper) - 无需身份验证即可抓取 Twitter 前端 API
+- [Ultimate-Facebook-Scraper](https://github.com/harismuneer/Ultimate-Facebook-Scraper) - 一个爬取几乎所有关于 Facebook 用户个人资料的机器人
+- [instagram-scraper](https://github.com/rarcega/instagram-scraper) - 抓取 Instagram 用户的照片和视频
+
+## JavaScript 引擎绑定
+
+- [Js2Py](https://github.com/PiotrDabkowski/Js2Py) - 用 100% 纯 Python 编写的 JavaScript 到 Python 翻译器和 JavaScript 解释器
+- [v8eval](https://github.com/sony/v8eval/) - 多语言绑定到 JavaScript 引擎 V8
+
+## 其他 python 列表
+
+- [awesome-python](https://github.com/vinta/awesome-python)
+- [pycrumbs](https://github.com/kirang89/pycrumbs)
+- [python-github-projects](https://github.com/checkcheckzz/python-github-projects)
+- [python_reference](https://github.com/rasbt/python_reference)
+- [pythonidae](https://github.com/svaksha/pythonidae)

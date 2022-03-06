@@ -1,14 +1,14 @@
-# Contributing
+# 贡献
 
-Your contributions are always welcome!
+随时欢迎您的贡献！
 
-## Guidelines
+## 准则
 
-* Clone the web-scraping repo
-* Add section if needed:
-    * Add section description
-    * Add section title to Table of contents
-* Search previous suggestions before making a new one, as yours may be a duplicate
-* Add your link: `* [project-name](http://example.com/) - A **short** description`
-* Check your spelling and grammar
-* Send a Pull Request
+- 克隆该 Repo
+- 如果需要，添加部分：
+  - 添加部分描述
+  - 将章节标题添加到目录
+- 在提出新内容之前搜索以前的建议，因为您的内容可能重复
+- 添加您的链接：`* [项目名称](http://example.com/) - **简短** 描述`
+- 检查拼写和语法
+- 发送 PR

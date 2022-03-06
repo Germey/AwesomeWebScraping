@@ -1,134 +1,124 @@
-# Java Web Scraping
+# Java 网页抓取
 
-This list contains Java libraries related to web scraping and data processing
+此列表包含与 Web 抓取和数据处理相关的 Java 库
 
-* [FooLanguage Web Scraping](#javascript-web-scraping)
-   * [Network](#network)
-   * [Web-scraping Frameworks](#web-scraping-frameworks)
-   * [HTML/XML Parsing](#htmlxml-parsing)
-   * [Text processing](#text-processing)
-   * [Specific Formats Processing](#specific-formats-processing)
-   * [Natural Language Processing](#natural-language-processing)
-   * [Browser automation and emulation](#browser-automation-and-emulation)
-   * [Multiprocessing](#multiprocessing)
-   * [Queue](#queue)
-   * [Email](#email)
-   * [URL and Network Address Manipulation](#url-and-network-address-manipulation)
-   * [Web Content Extracting](#web-content-extracting)
-   * [Asynchronous](#asynchronous)
-   * [WebSocket](#websocket)
-   * [DNS Resolving](#dns-resolving)
-   * [Computer Vision](#computer-vision)
-   * [Proxy Server](#proxy-server)
-   * [Other FooLanguage Lists](#other-foolanguage-lists)
+- [导航](#javascript-web-scraping)
+  - [网络请求工具](#network)
+  - [网页抓取框架](#web-scraping-frameworks)
+  - [HTML/XML 解析](#htmlxml-解析)
+  - [文本处理](#text-processing)
+  - [特定格式处理](#specific-formats-processing)
+  - [自然语言处理](#natural-language-processing)
+  - [浏览器自动化和仿真](#browser-automation-and-emulation)
+  - [多处理](#multiprocessing)
+  - [队列](#queue)
+  - [电子邮件](#email)
+  - [URL 和网络地址操作](#url-and-network-address-manipulation)
+  - [网页内容提取](#web-content-extracting)
+  - [异步](#异步)
+  - [WebSocket](#websocket)
+  - [DNS 解析](#dns-resolving)
+  - [计算机视觉](#computer-vision)
+  - [代理服务器](#proxy-server)
 
-## Network
-* General
-  * [Apache HttpClient](https://hc.apache.org/)
-  * [okhttp3](http://square.github.io/okhttp/)
-* Asynchronous
-  * [Apache Async HttpClient](https://hc.apache.org/)
-  * [AsyncHttpClient](https://github.com/AsyncHttpClient/async-http-client)
+## 网络请求工具
 
-## Web-Scraping Frameworks
-* Full Featured Crawlers
-  * [ACHE Crawler](https://github.com/ViDA-NYU/ache)
-  * [Apache Nutch](http://nutch.apache.org/)
+- 通用
+  - [Apache HttpClient](https://hc.apache.org/)
+  - [okhttp3](http://square.github.io/okhttp/)
+- 异步
+  - [Apache 异步 HttpClient](https://hc.apache.org/)
+  - [AsyncHttpClient](https://github.com/AsyncHttpClient/async-http-client)
 
-* Other
-  * [Crawler4j](https://github.com/yasserg/crawler4j)
-  * [StormCrawler](https://github.com/DigitalPebble/storm-crawler)
+## Web 抓取框架
 
-## HTML/XML Parsing
+- [ACHE](https://github.com/ViDA-NYU/ache)
+- [Apache Nutch](http://nutch.apache.org/)
+- [Crawler4j](https://github.com/yasserg/crawler4j)
+- [StormCrawler](https://github.com/DigitalPebble/storm-crawler)
 
-* [Apache Tika](https://tika.apache.org/)
+## HTML/XML 解析
 
-## Text Processing
+- [Apache Tika](https://tika.apache.org/)
 
-*Libraries for parsing and manipulating plain texts.*
+## 文本处理
 
-* General
-  * [Apache Tika](https://tika.apache.org/)
+_用于解析和操作纯文本的库。_
 
-## Specific Formats Processing
+- [Apache Tika](https://tika.apache.org/)
 
-*Libraries for parsing and manipulating specific text formats.*
+## 特定格式处理
 
-* General
-  * [Apache Tika](https://tika.apache.org/)
+_用于解析和处理特定文本格式的库。_
 
-* Something
-  * TODO
-  
-## Natural Language Processing
+- 通用
 
-*Libraries for working with human languages.*
+  - [Apache Tika](https://tika.apache.org/)
 
-* [Apache OpenNLP](https://opennlp.apache.org/)
-* [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
-* [Apache Tika](https://tika.apache.org/)
+## 自然语言处理
 
-## Browser automation and emulation
+_用于处理人类语言的库。_
 
-* [htmlunit](http://htmlunit.sourceforge.net/)
+- [Apache OpenNLP](https://opennlp.apache.org/)
+- [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/)
+- [Apache Tika](https://tika.apache.org/)
 
-## Multiprocessing
+## 浏览器自动化和仿真
 
-* TODO
+- [htmlunit](http://htmlunit.sourceforge.net/)
 
-## Asynchronous
+## 多处理
 
-*Libraries for asynchronous networking programming.*
+- TODO
 
-* TODO
+## 异步
 
-## Queue
+_用于异步网络编程的库。_
 
-* TODO
+- TODO
 
-## Email
+## 队列
 
-*Libraries for parsing email.*
+- TODO
 
-* TODO
+## 电子邮件
 
-## URL and Network Address Manipulation
+_用于解析电子邮件的库。_
 
-*Libraries for parsing/modifying URLs and network addresses.*
+- TODO
 
-* URL
-  * TODO
-* Network Address
-  * TODO
+## URL 和网络地址操作
 
-## Web Content Extracting
+_用于解析/修改 URL 和网络地址的库。_
 
-*Libraries for extracting web contents.*
+- 网址
+  - TODO
+- 网络地址
+  - TODO
 
-* Text and Meta Data from HTML pages
-  * [Boilerpipe](https://github.com/kohlschutter/boilerpipe)
-  * [Apache Tika](https://tika.apache.org/)
+## 网页内容提取
 
+_用于提取网页内容的库。_
 
-## WebSocket
+- HTML 页面中的文本和元数据
+  - [Boilerpipe](https://github.com/kohlschutter/boilerpipe)
+  - [Apache Tika](https://tika.apache.org/)
 
-*Libraries for working with WebSocket.*
+## 网络套接字
 
-* TODO
+_使用 WebSocket 的库。_
 
-## DNS Resolving
+- TODO
 
-* [dnsjava](http://www.dnsjava.org/)
-* [spotify-dns-java](https://github.com/spotify/dns-java)
+## DNS 解析
 
-## Computer Vision
+- [dnsjava](http://www.dnsjava.org/)
+- [spotify-dns-java](https://github.com/spotify/dns-java)
 
-* TODO
+## 计算机视觉
 
-## Proxy Server
+- TODO
 
-* TODO
+## 代理服务器
 
-## Other FooLanguage lists
-
-* TODO
+- TODO

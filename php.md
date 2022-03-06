@@ -1,204 +1,190 @@
-# PHP Web Scraping
+# PHP 网页抓取
 
-This list contains PHP libraries related to web scraping and data processing
+此列表包含与网页抓取和数据处理相关的 PHP 库
 
-* [PHP Web Scraping](#php-web-scraping)
-   * [Network](#network)
-   * [Web-scraping Frameworks](#web-scraping-frameworks)
-   * [HTML/XML Parsing](#htmlxml-parsing)
-   * [Text processing](#text-processing)
-   * [Specific Formats Processing](#specific-formats-processing)
-   * [Natural Language Processing](#natural-language-processing)
-   * [Browser automation and emulation](#browser-automation-and-emulation)
-   * [Multiprocessing](#multiprocessing)
-   * [Queue](#queue)
-   * [Cloud Computing](#cloud-computing)
-   * [Email](#email)
-   * [URL Manipulation](#url-manipulation)
-   * [Web Content Extracting](#web-content-extracting)
-   * [Asynchronous](#asynchronous)
-   * [WebSocket](#websocket)
-   * [DNS Resolving](#dns-resolving)
-   * [Computer Vision](#computer-vision)
-   * [Geocoding](#geocoding)
-   * [API Clients](#api-clients)
-   * [Other PHP Lists](#other-php-lists)
+- [PHP 网页抓取](#php-web-scraping)
+  - [网络请求工具](#网络请求工具)
+  - [网页抓取框架](#HTML/XML解析)
+  - [HTML/XML 解析](#htmlxml-解析)
+  - [文本处理](#text-processing)
+  - [特定格式处理](#specific-formats-processing)
+  - [自然语言处理](#natural-language-processing)
+  - [浏览器自动化和仿真](#browser-automation-and-emulation)
+  - [多处理](#multiprocessing)
+  - [队列](#queue)
+  - [云计算](#cloud-computing)
+  - [电子邮件](#email)
+  - [URL 操作](#url-manipulation)
+  - [网页内容提取](#web-content-extracting)
+  - [异步](#异步)
+  - [WebSocket](#websocket)
+  - [DNS 解析](#dns-resolving)
+  - [计算机视觉](#computer-vision)
+  - [地理编码](#geocoding)
+  - [API 客户端](#api-clients)
+  - [其他 PHP 列表](#other-php-lists)
 
+## 网络请求工具
 
-## Network
+- [Guzzle](https://github.com/guzzle/guzzle) - 一个全面的 HTTP 客户端。
+- [Buzz](https://github.com/kriswallsmith/Buzz) - 另一个 HTTP 客户端。
+- [Requests](https://github.com/rmccue/Requests) - 一个简单的 HTTP 库。
+- [HTTPFul](https://github.com/nategood/httpful) - 一个可链接的 HTTP 客户端。
+- [Goutte](https://github.com/fabpot/Goutte) - 一个简单的网络爬虫。
+- [PHP Spider](https://github.com/mvdbos/php-spider) - 一个全面的网络蜘蛛。
 
-* [Guzzle]( https://github.com/guzzle/guzzle) - A comprehensive HTTP client.
-* [Buzz](https://github.com/kriswallsmith/Buzz) - Another HTTP client.
-* [Requests](https://github.com/rmccue/Requests) - A simple HTTP library.
-* [HTTPFul](https://github.com/nategood/httpful) - A chainable HTTP client.
-* [Goutte](https://github.com/fabpot/Goutte) - A simple web scraper.
-* [PHP Spider](https://github.com/mvdbos/php-spider) - A comprehensive web spider.
+## Web 抓取框架
 
+- TODO
 
-## Web-Scraping Frameworks
-* TODO
+## HTML/XML 解析
 
+- [HTML5 PHP](https://github.com/Masterminds/html5-php) - HTML5 解析器和序列化程序库。
+- [QueryPath](https://github.com/technosophos/querypath) - 一个类似 jQuery 的库，用于在 PHP 中处理 XML 和 HTML 文档。它现在通过 HTML5-PHP 项目包含对 HTML5 的支持。
+- [DiDOM](https://github.com/Imangazaliev/DiDOM) - 超快速的 HTML 解析器（因为它是建立在纯 PHP 之上的）。
+- [PHPScraper](https://github.com/spekulatius/phpscraper) - 一个高度自以为是的网络界面。
 
-## HTML/XML Parsing
-* [HTML5 PHP](https://github.com/Masterminds/html5-php) - An HTML5 parser and serializer library.
-* [QueryPath](https://github.com/technosophos/querypath) - a jQuery-like library for working with XML and HTML documents in PHP. It now contains support for HTML5 via the HTML5-PHP project.
-* [DiDOM](https://github.com/Imangazaliev/DiDOM) - super fast HTML parser (because it was build on top of plain PHP).
-* [PHPScraper](https://github.com/spekulatius/phpscraper) - an highly opinionated web-interface.
+## 文本处理
 
+_用于解析和操作纯文本的库。_
 
-## Text Processing
+- 通用
+  - [ANSI 到 HTML5](https://github.com/sensiolabs/ansi-to-html) - ANSI 到 HTML5 转换器库。
+  - [Patchwork UTF-8](https://github.com/nicolas-grekas/Patchwork-UTF8) - 用于处理 UTF-8 字符串的可移植库。
+  - [Hoa String](https://github.com/hoaproject/Ustring) - 另一个 UTF-8 字符串库。
+  - [Stringy](https://github.com/danielstjules/Stringy) - 支持多字节的字符串操作库。
+  - [Color Jizz](https://github.com/mikeemoo/ColorJizz-PHP) - 一个用于操作和转换颜色的库。
+  - [Text](https://github.com/kzykhys/Text) - 一个文本操作库。
+  - [Flux](https://github.com/selvinortiz/flux) - 一个正则表达式构建库。
+- 音译
+  - [Urlify](https://github.com/jbroadway/urlify) - Django 的 URLify.js 的 PHP 端口。
+  - [Slugify](https://github.com/cocur/slugify) - 一个将字符串转换为 slug 的库。
+- 用户代理
+  - [设备检测器](https://github.com/piwik/device-detector) - 另一个用于解析用户代理字符串的库。
+  - [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect) - 用于检测移动设备（包括平板电脑）的轻量级 PHP 类。
+  - [UA Parser](https://github.com/tobie/ua-parser/tree/master/php) - 一个用于解析用户代理字符串的库。
+- 计量单位
+  - [ByteUnits](https://github.com/gabrielelana/byte-units) - 一个在二进制和公制系统中解析、格式化和转换字节单位的库。
+  - [PHP Units of Measure](https://github.com/triplepoint/php-units-of-measure) - 用于在度量单位之间进行转换的库。
+  - [PHP Conversion](https://github.com/Crisu83/php-conversion) - 另一个用于在度量单位之间进行转换的库。
+- 电话号码
+  - [LibPhoneNumber for PHP](https://github.com/giggsey/libphonenumber-for-php) - Google 电话号码处理库的 PHP 实现。
 
-*Libraries for parsing and manipulating plain texts.*
+## 特定格式处理
 
-* General
-  * [ANSI to HTML5](https://github.com/sensiolabs/ansi-to-html) - An ANSI to HTML5 converter library.
-  * [Patchwork UTF-8](https://github.com/nicolas-grekas/Patchwork-UTF8) - A portable library for working with UTF-8 strings.
-  * [Hoa String](https://github.com/hoaproject/Ustring) - Another UTF-8 string library.
-  * [Stringy](https://github.com/danielstjules/Stringy) - A string manipulation library with multibyte support.
-  * [Color Jizz](https://github.com/mikeemoo/ColorJizz-PHP) - A library for manipulating and converting colours.
-  * [Text](https://github.com/kzykhys/Text) - A text manipulation library.
-  * [Flux](https://github.com/selvinortiz/flux) - A regular expression building library.
-* Transliteration
-  * [Urlify](https://github.com/jbroadway/urlify) - A PHP port of Django's URLify.js.
-  * [Slugify](https://github.com/cocur/slugify) - A library to convert strings to slugs.
-* User-agent
-  * [Device Detector](https://github.com/piwik/device-detector) - Another library for parsing user agent strings.
-  * [Mobile-Detect](https://github.com/serbanghita/Mobile-Detect) - A lightweight PHP class for detecting mobile devices (including tablets).
-  * [UA Parser](https://github.com/tobie/ua-parser/tree/master/php) - A library for parsing user agent strings.
-* Unites of measure
-  * [ByteUnits](https://github.com/gabrielelana/byte-units) - A library to parse, format and convert byte units in binary and metric systems.
-  * [PHP Units of Measure](https://github.com/triplepoint/php-units-of-measure) - A library for converting between units of measure.
-  * [PHP Conversion](https://github.com/Crisu83/php-conversion) - Another library for converting between units of measure.
-* Phone number
-  * [LibPhoneNumber for PHP](https://github.com/giggsey/libphonenumber-for-php) - A PHP implementation of Google's phone number handling library.
+_用于解析和处理特定文本格式的库。_
 
+- CSV
+  - [CSV](https://github.com/thephpleague/csv) - 一个 CSV 数据操作库。
+- Office
+  - [PHPWord](https://github.com/PHPOffice/PHPWord) - 用于处理 Microsoft Word 文档的库。
+  - [PHPExcel](https://github.com/PHPOffice/PHPExcel) - 用于处理 Microsoft Excel 文档的库。
+  - [PHPPowerPoint](https://github.com/PHPOffice/PHPPowerPoint) - 用于处理 Microsoft PowerPoint 文档的库。
+  - [ExcelAnt](https://github.com/Wisembly/ExcelAnt) - 用于操作 Microsoft Excel 文档的库。
+- Markdown
+  - [PHP Markdown](https://github.com/michelf/php-markdown) - Markdown 解析器。
+  - [CommonMark PHP](https://github.com/thephpleague/commonmark) - 一个支持完整 [CommonMark 规范](http://spec.commonmark.org/) 的 Markdown 解析器。
+  - [Parsedown](https://github.com/erusev/parsedown) - 另一个 Markdown 解析器。
+  - [Ciconia](https://github.com/kzykhys/Ciconia) - 另一个 Markdown 解析器
+  - [Cebe Markdown](https://github.com/cebe/markdown) - 一个快速且可扩展的 Markdown 解析器。
 
-## Specific Formats Processing
+- BBCode
+  - [Decoda](https://github.com/milesj/decoda) - 用于 BBCode 样式标记的轻量级词法字符串解析器。
+- JSON
+  - [JsonMapper](https://github.com/netresearch/jsonmapper) - 一个将嵌套 JSON 结构映射到 PHP 类的库。
+- 电子名片
+  - [vobject](https://github.com/fruux/sabre-vobject) - VObject 库允许您轻松解析和操作 iCalendar 和 vCard 对象。
+- 文件类型检测
+  - [Hoa Mime](https://github.com/hoaproject/Mime) - 另一个 MIME 检测库。
+  - [Canal](https://github.com/dflydev/dflydev-canal) - 确定互联网媒体类型的库。
+  - [Apache MIME 类型](https://github.com/dflydev/dflydev-apache-mime-types) - 解析 Apache MIME 类型的库。
+- GeoJSON
+  - [GeoJSON](https://github.com/jmikola/geojson) - GeoJSON 实现。
 
-*Libraries for parsing and manipulating specific text formats.*
+## 自然语言处理
 
-* CSV
-  * [CSV](https://github.com/thephpleague/csv) - A CSV data manipulation library.
-* Office
-  * [PHPWord](https://github.com/PHPOffice/PHPWord) - A library for working with Microsoft Word documents.
-  * [PHPExcel](https://github.com/PHPOffice/PHPExcel) - A library for working with Microsoft Excel documents.
-  * [PHPPowerPoint](https://github.com/PHPOffice/PHPPowerPoint) - A library for working with Microsoft PowerPoint documents.
-  * [ExcelAnt](https://github.com/Wisembly/ExcelAnt) - A library for manipulating Microsoft Excel documents.
-* Markdown
-  * [PHP Markdown](https://github.com/michelf/php-markdown) - A Markdown parser.
-  * [CommonMark PHP](https://github.com/thephpleague/commonmark) - A Markdown parser which supports the full [CommonMark spec](http://spec.commonmark.org/).
-  * [Parsedown](https://github.com/erusev/parsedown) - Another Markdown parser.
-  * [Ciconia](https://github.com/kzykhys/Ciconia) - Another Markdown parser that supports Github flavoured Markdown.
-  * [Cebe Markdown](https://github.com/cebe/markdown) - An fast and extensible Markdown parser.
-* BBCode
-  * [Decoda](https://github.com/milesj/decoda) - A lightweight lexical string parser for BBCode styled markup.
-* JSON
-  * [JsonMapper](https://github.com/netresearch/jsonmapper) - A library that maps nested JSON structures onto PHP classes.
-* vCard
-  * [vobject](https://github.com/fruux/sabre-vobject) - The VObject library allows you to easily parse and manipulate iCalendar and vCard objects.
-* File Type Detection
-  * [Hoa Mime](https://github.com/hoaproject/Mime) - Another MIME detection library.
-  * [Canal](https://github.com/dflydev/dflydev-canal) - A library to determine internet media types.
-  * [Apache MIME Types](https://github.com/dflydev/dflydev-apache-mime-types) - A library that parses Apache MIME types.
-* GeoJSON
-  * [GeoJSON](https://github.com/jmikola/geojson) - A GeoJSON implementation.
+_用于处理人类语言的库。_
 
+- [PHP NlpTools](https://github.com/angeloskath/php-nlp-tools) - PHP 中的自然语言处理工具
+- [nlpTools](https://github.com/atrilla/nlptools) - PHP 的自然语言处理工具包
 
-## Natural Language Processing
+## 浏览器自动化和仿真
 
-*Libraries for working with human languages.*
+- [php-webdriver](https://github.com/facebook/php-webdriver) - webdriver 的 php 客户端。
+- [PHP PhantomJS](https://github.com/jonnnnyw/php-phantomjs) - 通过 PHP 执行 PhantomJS 命令
+- [Mink](https://github.com/minkphp/Mink) - 用于多个浏览器模拟器的通用 API（selenium、zombie.js、goutte）
 
-* [PHP NlpTools](https://github.com/angeloskath/php-nlp-tools) - Natural Language Processing Tools in PHP
-* [nlpTools](https://github.com/atrilla/nlptools) - Natural Language Processing Toolkit for PHP
+## 多处理
 
+- [Spork](https://github.com/kriswallsmith/spork) - 一个进程分叉库。
 
-## Browser automation and emulation
+## 异步
 
-* [php-webdriver](https://github.com/facebook/php-webdriver) - A php client for webdriver.
-* [PHP PhantomJS](https://github.com/jonnnnyw/php-phantomjs) - Execute PhantomJS commands through PHP
-* [Mink](https://github.com/minkphp/Mink) - universal API for multiple browser emulators (selenium, zombie.js, goutte)
+_用于异步网络编程的库。_
 
+- [React](https://github.com/reactphp/react) - 一个事件驱动的非阻塞 I/O 库。
+- [Rx.PHP](https://github.com/asm89/Rx.PHP) - 一个反应式扩展库。
+- [Hoa EventSource](https://github.com/hoaproject/Eventsource) - 一个事件源库。
+- [Evenement](https://github.com/igorw/evenement) - 一个事件调度器库。
+- [Event](https://github.com/thephpleague/event) - 一个专注于领域事件的事件库。
+- [Broadway](https://github.com/qandidate-labs/broadway) - 事件源和 CQRS 库。
 
-## Multiprocessing
+## 队列
 
-  * [Spork](https://github.com/kriswallsmith/spork) - A process forking library.
+- [Pheanstalk](https://github.com/pda/pheanstalk) - 一个 Beanstalkd 客户端库。
+- [PHP AMQP](https://github.com/videlalvaro/php-amqplib) - 一个纯 PHP AMQP 库。
+- [Thumper](https://github.com/videlalvaro/Thumper) - RabbitMQ 模式库。
+- [Bernard](https://github.com/bernardphp/bernard) - 一个多后端抽象库。
 
-## Asynchronous
+## 云计算
 
-*Libraries for asynchronous networking programming.*
+- 去做
 
-* [React](https://github.com/reactphp/react) - An event driven non-blocking I/O library.
-* [Rx.PHP](https://github.com/asm89/Rx.PHP) - A reactive extension library.
-* [Hoa EventSource](https://github.com/hoaproject/Eventsource) - An event source library.
-* [Evenement](https://github.com/igorw/evenement) - An event dispatcher library.
-* [Event](https://github.com/thephpleague/event) - An event library with a focus on domain events.
-* [Broadway](https://github.com/qandidate-labs/broadway) - An event source and CQRS library.
+## 电子邮件
 
+_用于解析电子邮件的库。_
 
-## Queue
+- [电子邮件回复解析器](https://github.com/willdurand/EmailReplyParser) - 一个电子邮件回复解析器库。
+- [电子邮件验证器](https://github.com/nojacko/email-validator) - 一个小型电子邮件地址验证库。
 
-* [Pheanstalk](https://github.com/pda/pheanstalk) - A Beanstalkd client library.
-* [PHP AMQP](https://github.com/videlalvaro/php-amqplib) - A pure PHP AMQP library.
-* [Thumper](https://github.com/videlalvaro/Thumper) - A RabbitMQ pattern library.
-* [Bernard](https://github.com/bernardphp/bernard) - A multibackend abstraction library.
+## URL 操作
 
+_用于解析 URL 的库。_
 
-## Cloud Computing
-* TODO
+- [Purl](https://github.com/jwage/purl) - 一个 URL 操作库。
+- [PHP 域解析器](https://github.com/jeremykendall/php-domain-parser) - 域后缀解析器库。
+- [Uri](https://github.com/thephpleague/uri) (PHP League) - 一个简单的 URL 操作库（兼容 PSR-7）。
 
+## 网页内容提取
 
-## Email
+- 来自 Web 文档的文本和元数据
+  - [Essence](https://github.com/felixgirault/essence) - 用于提取网络媒体的库。
+  - [Embera](https://github.com/mpratt/Embera) - 一个 Oembed 消费者库。
+  - [Embed](https://github.com/oscarotero/Embed) - 一个很棒的库，用于从网页获取有用的信息。
+- 视频
+  - [Youtube-Downloader](https://github.com/jeckman/YouTube-Downloader) - 用于从 youtube 下载视频的 PHP 脚本；还将 youtube 提要解析为播客的 RSS 附件
 
-*Libraries for parsing email.*
+## 网络套接字
 
-* [Email Reply Parser](https://github.com/willdurand/EmailReplyParser) - An email reply parser library.
-* [Email Validator](https://github.com/nojacko/email-validator) - A small email address validation library.
+_使用 WebSocket 的库。_
 
+- [Ratchet](https://github.com/cboden/Ratchet) - 一个网络套接字库。
+- [Hoa WebSocket](https://github.com/hoaproject/Websocket) - 另一个 Web 套接字库。
+- [Elephant.io](https://github.com/Wisembly/Elephant.io) - 另一个 Web 套接字库。
 
-## URL Manipulation
+## DNS 解析
 
-*Libraries for parsing URLs.*
+- [Net_DNS2](https://github.com/mikepultz/netdns2) - 原生 PHP DNS 解析器和更新器
 
-* [Purl](https://github.com/jwage/purl) - A URL manipulation library.
-* [PHP Domain Parser](https://github.com/jeremykendall/php-domain-parser) - A domain suffix parser library.
-* [Uri](https://github.com/thephpleague/uri) (The PHP League) - A simple URL manipulation library (PSR-7 compatible).
+## 计算机视觉
 
+- [OpenCV-for-PHP](https://github.com/mgdm/OpenCV-for-PHP) - PHP 的 OpenCV 绑定
 
-## Web Content Extracting
+## 地理编码
 
-* Text and Meta Data from Web Documents
-  * [Essence](https://github.com/felixgirault/essence) - A library for extracting web media.
-  * [Embera](https://github.com/mpratt/Embera) - An Oembed consumer library.
-  * [Embed](https://github.com/oscarotero/Embed) - An awesome library for getting useful information from a webpage.
-* Video
-  * [Youtube-Downloader](https://github.com/jeckman/YouTube-Downloader) - PHP script for downloading videos from youtube; also parsing youtube feed into RSS enclosures for podcatchers
+- [GeoCoder](http://geocoder-php.org/) - 一个地理编码库。
+- [GeoTools](https://github.com/php-loep/Geotools) - 地理相关工具库。
 
+## 其他 PHP 列表
 
-## WebSocket
-
-*Libraries for working with WebSocket.*
-
-* [Ratchet](https://github.com/cboden/Ratchet) - A web socket library.
-* [Hoa WebSocket](https://github.com/hoaproject/Websocket) - Another web socket library.
-* [Elephant.io](https://github.com/Wisembly/Elephant.io) - Yet another web socket library.
-
-
-## DNS Resolving
-
-  * [Net_DNS2](https://github.com/mikepultz/netdns2) - Native PHP DNS Resolver and Updater
-
-
-## Computer Vision
-
-  * [OpenCV-for-PHP](https://github.com/mgdm/OpenCV-for-PHP) - An OpenCV binding for PHP
-
-
-## Geocoding
-
-* [GeoCoder](http://geocoder-php.org/) - A geocoding library.
-* [GeoTools](https://github.com/php-loep/Geotools) - A library of geo-related tools.
-
-
-## Other PHP lists
-
- * [awesome-php](https://github.com/ziadoz/awesome-php)
+- [awesome-php](https://github.com/ziadoz/awesome-php)

@@ -1,303 +1,190 @@
-# Golang Web Scraping
-
-This list contains Golang libraries related to web scraping and data processing
-
-* [Golang Web Scraping](#javascript-web-scraping)
-   * [Network](#network)
-   * [Web-scraping Frameworks](#web-scraping-frameworks)
-   * [HTML/XML Parsing](#htmlxml-parsing)
-   * [Text processing](#text-processing)
-   * [Specific Formats Processing](#specific-formats-processing)
-   * [Natural Language Processing](#natural-language-processing)
-   * [Browser automation and emulation](#browser-automation-and-emulation)
-   * [Multiprocessing](#multiprocessing)
-   * [Queue](#queue)
-   * [Email](#email)
-   * [URL and Network Address Manipulation](#url-and-network-address-manipulation)
-   * [Web Content Extracting](#web-content-extracting)
-   * [Asynchronous](#asynchronous)
-   * [WebSocket](#websocket)
-   * [DNS Resolving](#dns-resolving)
-   * [Computer Vision](#computer-vision)
-   * [Proxy Server](#proxy-server)
-   * [Other Golang Lists](#other-Golang-lists)
-
-## Network
-* General
-  * [net](https://golang.org/pkg/net/) - built-in package manipulating networking
-  * [net/http](https://golang.org/pkg/net/http/) - build-in package capable of HTTP programming
-* Asynchronous
-  * [goroutine](https://tour.golang.org/concurrency/1) - primitive green thread in Golang
-
-## Web-Scraping Frameworks
-* Full Featured Crawlers
-  * [Pholcus](https://github.com/henrylee2cn/pholcus) - Pholcus is a distributed, high concurrency and powerful web crawler software.
-  * [go_spider](https://github.com/hu17889/go_spider) - An flexible, modular and expansible Go concurrent Crawler(spider) framework.
-  * [ants-go](https://github.com/wcong/ants-go) - A distributed, restful crawler engine in golang.
-* Full Featured Scrapers
-  * [geziyor](https://github.com/geziyor/geziyor) - Geziyor, a blazing fast web scraping framework, supports JS rendering.
-  * [colly](https://github.com/gocolly/colly) - Fast and elegant scraping framework
-  * [dataflow kit](https://github.com/slotix/dataflowkit) - Dataflow Kit - extract structured data from web sites.
-* Other
-  * [ferret](https://github.com/MontFerret/ferret) - A web scraping tool with a declarative query language.
-
-## HTML/XML Parsing
-
-* [encoding/xml](https://golang.org/pkg/encoding/xml/) - A built-in package implements a simple XML 1.0 parser.
-
-## Text Processing
-
-*Libraries for parsing and manipulating plain texts.*
-
-* General
-  * [regexp](https://golang.org/pkg/regexp/) - A built-in package implements regular expression search.
-
-## Specific Formats Processing
-
-*Libraries for parsing and manipulating specific text formats.*
-
-* General
-  * [encoding/json](https://golang.org/pkg/encoding/json/) - A built-in package implements encoding and decoding of JSON as defined in RFC 4627.
-  * [allot](https://github.com/sbstjn/allot) - Placeholder and wildcard text parsing for CLI tools and bots
-  * [bbConvert](https://github.com/CalebQ42/bbConvert) - Converts bbCode to HTML that allows you to add support for custom bbCode tags
-  * [blackfriday](https://github.com/russross/blackfriday) - Markdown processor in Go
-  * [bluemonday](https://github.com/microcosm-cc/bluemonday) - HTML Sanitizer
-  * [editorconfig-core-go](https://github.com/editorconfig/editorconfig-core-go) - Editorconfig file parser and manipulator for Go
-  * [enca](https://github.com/endeveit/enca) - Minimal cgo bindings for [libenca](http://cihar.com/software/enca/).
-  * [genex](https://github.com/alixaxel/genex) - Count and expand Regular Expressions into all matching Strings
-  * [github_flavored_markdown](https://godoc.org/github.com/shurcooL/github_flavored_markdown) - GitHub Flavored Markdown renderer (using blackfriday) with fenced code block highlighting, clickable header anchor links.
-  * [go-humanize](https://github.com/dustin/go-humanize) - Formatters for time, numbers, and memory size to human readable format.
-  * [go-nmea](https://github.com/adrianmo/go-nmea) - NMEA parser library for the Go language.
-  * [go-runewidth](https://github.com/mattn/go-runewidth) - Functions to get fixed width of the character or string.
-  * [go-slugify](https://github.com/mozillazg/go-slugify) - Make pretty slug with multiple languages support.
-  * [go-vcard](https://github.com/emersion/go-vcard) - Parse and format vCard
-  * [gofeed](https://github.com/mmcdole/gofeed) - Parse RSS and Atom feeds in Go
-  * [gographviz](https://github.com/awalterschulze/gographviz) - Parses the Graphviz DOT language.
-  * [gommon/bytes](https://github.com/labstack/gommon/tree/master/bytes) - Format bytes to string.
-  * [gonameparts](https://github.com/polera/gonameparts) - Parses human names into individual name parts
-  * [GoQuery](https://github.com/PuerkitoBio/goquery) - GoQuery brings a syntax and a set of features similar to jQuery to the Go language.
-  * [goregen](https://github.com/zach-klippenstein/goregen) - A library for generating random strings from regular expressions.
-  * [gotext](https://github.com/leonelquinteros/gotext) - GNU gettext utilities for Go.
-  * [guesslanguage](https://github.com/endeveit/guesslanguage) - Functions to determine the natural language of a unicode text.
-  * [inject](https://github.com/facebookgo/inject) - Package inject provides a reflect based injector.
-  * [mxj](https://github.com/clbanning/mxj) - Encode / decode XML as JSON or map[string]interface{}; extract values with dot-notation paths and wildcards. Replaces x2j and j2x packages.
-  * [sh](https://github.com/mvdan/sh) - A shell parser and formatter
-  * [slug](https://github.com/gosimple/slug) - URL-friendly slugify with multiple languages support.
-  * [Slugify](https://github.com/avelino/slugify) - A Go slugify application that handles string.
-  * [toml](https://github.com/BurntSushi/toml) - TOML configuration format (encoder/decoder with reflection).
-  * [xpath](https://github.com/antchfx/xpath) - XPath package for Go.
-  * [xquery](https://github.com/antchfx/xquery) - XQuery lets you extract data from HTML/XML documents using XPath expression.
-
-## Natural Language Processing
-
-*Libraries for working with human languages.*
-
-* [dpar](https://github.com/danieldk/dpar/) - Transition-based statistical dependency parser.
-* [go-eco](https://github.com/ThePaw/go-eco) - Similarity, dissimilarity and distance matrices; diversity, equitability and inequality measures; species richness estimators; coenocline models.
-* [go-i18n](https://github.com/nicksnyder/go-i18n/) - A package and an accompanying tool to work with localized text.
-* [go-mystem](https://github.com/dveselov/mystem) - CGo bindings to Yandex.Mystem - russian morphology analyzer.
-* [go-nlp](https://github.com/nuance/go-nlp) - Utilities for working with discrete probability distributions and other tools useful for doing NLP work.
-* [go-stem](https://github.com/agonopol/go-stem) - Implementation of the porter stemming algorithm.
-* [go-unidecode](https://github.com/mozillazg/go-unidecode) - ASCII transliterations of Unicode text.
-* [go2vec](https://github.com/danieldk/go2vec) - Reader and utility functions for word2vec embeddings.
-* [gojieba](https://github.com/yanyiwu/gojieba) - This is a Go implementation of [jieba](https://github.com/fxsjy/jieba) which a Chinese word splitting algorithm.
-* [golibstemmer](https://github.com/rjohnsondev/golibstemmer) - Go bindings for the snowball libstemmer library including porter 2
-* [gounidecode](https://github.com/fiam/gounidecode) - Unicode transliterator (also known as unidecode) for Go
-* [icu](https://github.com/goodsign/icu) - Cgo binding for icu4c C library detection and conversion functions. Guaranteed compatibility with version 50.1.
-* [libtextcat](https://github.com/goodsign/libtextcat) - Cgo binding for libtextcat C library. Guaranteed compatibility with version 2.2.
-* [MMSEGO](https://github.com/awsong/MMSEGO) - This is a GO implementation of [MMSEG](http://technology.chtsai.org/mmseg/) which a Chinese word splitting algorithm.
-* [paicehusk](https://github.com/rookii/paicehusk) - Golang implementation of the Paice/Husk Stemming Algorithm
-* [porter](https://github.com/a2800276/porter) - This is a fairly straightforward port of Martin Porter's C implementation of the Porter stemming algorithm.
-* [porter2](https://github.com/zhenjl/porter2) - Really fast Porter 2 stemmer.
-* [prose](https://github.com/jdkato/prose) - A library for text processing that supports tokenization, part-of-speech tagging, named-entity extraction, and more.
-* [RAKE.go](https://github.com/Obaied/RAKE.go) - A Go port of the Rapid Automatic Keyword Extraction Algorithm (RAKE)
-* [segment](https://github.com/blevesearch/segment) - A Go library for performing Unicode Text Segmentation as described in [Unicode Standard Annex #29](http://www.unicode.org/reports/tr29/)
-* [sentences](https://github.com/neurosnap/sentences) - A sentence tokenizer:  converts text into a list of sentences.
-* [snowball](https://github.com/goodsign/snowball) - Snowball stemmer port (cgo wrapper) for Go. Provides word stem extraction functionality [Snowball native](http://snowball.tartarus.org/).
-* [stemmer](https://github.com/dchest/stemmer) - Stemmer packages for Go programming language. Includes English and German stemmers.
-* [textcat](https://github.com/pebbe/textcat) - A Go package for n-gram based text categorization, with support for utf-8 and raw text
-* [whatlanggo](https://github.com/abadojack/whatlanggo) - A natural language detection package for Go. Supports 84 languages and 24 scripts (writing systems e.g. Latin, Cyrillic, etc).
-* [when](https://github.com/olebedev/when) - A natural EN and RU language date/time parser with pluggable rules
+# Golang 网页抓取
+
+此列表包含与 Web 抓取和数据处理相关的 Golang 库
+
+- [Golang 网页抓取](#javascript-web-scraping)
+  - [网络请求工具](#network)
+  - [网页抓取框架](#web-scraping-frameworks)
+  - [HTML/XML 解析](#htmlxml-解析)
+  - [文本处理](#text-processing)
+  - [特定格式处理](#specific-formats-processing)
+  - [自然语言处理](#natural-language-processing)
+  - [浏览器自动化和仿真](#browser-automation-and-emulation)
+  - [多处理](#multiprocessing)
+  - [队列](#queue)
+  - [电子邮件](#email)
+  - [URL 和网络地址操作](#url-and-network-address-manipulation)
+  - [网页内容提取](#web-content-extracting)
+  - [异步](#异步)
+  - [WebSocket](#websocket)
+  - [DNS 解析](#dns-resolving)
+  - [计算机视觉](#computer-vision)
+  - [代理服务器](#proxy-server)
+
+## 网络请求工具
+
+- 通用
+  - [net](https://golang.org/pkg/net/) - 操作网络的内置包
+  - [net/http](https://golang.org/pkg/net/http/) - 能够进行 HTTP 编程的内置包
+- 异步
+  - [goroutine](https://tour.golang.org/concurrency/1) - Golang 中的 Concurrency
+
+## Web 抓取框架
+
+- [Pholcus](https://github.com/henrylee2cn/pholcus) - Pholcus 是一款分布式、高并发、功能强大的网络爬虫软件。
+- [go_spider](https://github.com/hu17889/go_spider) - 一个灵活、模块化、可扩展的 Go 并发爬虫（spider）框架。
+- [ants-go](https://github.com/wcong/ants-go) - golang 中的分布式的爬虫引擎。
+- [geziyor](https://github.com/geziyor/geziyor) - Geziyor，一个超快的网页抓取框架，支持 JS 渲染。
+- [colly](https://github.com/gocolly/colly) - 快速优雅的抓取框架
+- [dataflowkit](https://github.com/slotix/dataflowkit) - 数据流工具包 - 从网站中提取结构化数据。
+- [ferret](https://github.com/MontFerret/ferret) - 具有声明性查询语言的网络抓取工具。
+
+## HTML/XML 解析
+
+- [encoding/xml](https://golang.org/pkg/encoding/xml/) - 内置包实现了一个简单的 XML 1.0 解析器。
+
+## 文本处理
+
+_用于解析和操作纯文本的库。_
+
+- 通用
+  - [regexp](https://golang.org/pkg/regexp/) - 内置包实现正则表达式搜索。
+
+## 特定格式处理
+
+_用于解析和处理特定文本格式的库。_
+
+- 通用
+
+  - [encoding/json](https://golang.org/pkg/encoding/json/) - 内置包实现了 RFC 4627 中定义的 JSON 编码和解码。
+  - [allot](https://github.com/sbstjn/allot) - CLI 工具和机器人的占位符和通配符文本解析
+  - [bbConvert](https://github.com/CalebQ42/bbConvert) - 将 bbCode 转换为 HTML，允许您添加对自定义 bbCode 标签的支持
+  - [blackfriday](https://github.com/russross/blackfriday) - Go 中的 Markdown 处理器
+  - [bluemonday](https://github.com/microcosm-cc/bluemonday) - HTML Sanitizer
+  - [editorconfig-core-go](https://github.com/editorconfig/editorconfig-core-go) - Go 的 Editorconfig 文件解析器和操纵器
+  - [enca](https://github.com/endeveit/enca) - [libenca](http://cihar.com/software/enca/) 的最小 cgo 绑定。
+  - [genex](https://github.com/alixaxel/genex) - 计算正则表达式并将其扩展为所有匹配的字符串
+  - [github_flavored_markdown](https://godoc.org/github.com/shurcooL/github_flavored_markdown) - GitHub 风格的 Markdown 渲染器（使用 blackfriday），带有围栏代码块突出显示，可点击的标题锚链接。
+  - [go-humanize](https://github.com/dustin/go-humanize) - 将时间、数字和内存大小格式化为人类可读格式。
+  - [go-nmea](https://github.com/adrianmo/go-nmea) - Go 语言的 NMEA 解析器库。
+  - [go-runewidth](https://github.com/mattn/go-runewidth) - 获取字符或字符串的固定宽度的函数。
+  - [go-slugify](https://github.com/mozillazg/go-slugify) - 使用多种语言支持制作漂亮的 slug。
+  - [go-vcard](https://github.com/emersion/go-vcard) - 解析和格式化 vCard
+  - [gofeed](https://github.com/mmcdole/gofeed) - 在 Go 中解析 RSS 和 Atom 提要
+  - [gographviz](https://github.com/awalterschulze/gographviz) - 解析 Graphviz DOT 语言。
+  - [gommon/bytes](https://github.com/labstack/gommon/tree/master/bytes) - 将字节格式化为字符串。
+  - [gonameparts](https://github.com/polera/gonameparts) - 将人名解析为单独的名称部分
+  - [GoQuery](https://github.com/PuerkitoBio/goquery) - GoQuery 为 Go 语言带来了类似于 jQuery 的语法和一组特性。
+  - [goregen](https://github.com/zach-klippenstein/goregen) - 从正则表达式生成随机字符串的库。
+  - [gotext](https://github.com/leonelquinteros/gotext) - Go 的 GNU gettext 实用程序。
+  - [guesslanguage](https://github.com/endeveit/guesslanguage) - 确定 unicode 文本的自然语言的函数。
+  - [inject](https://github.com/facebookgo/inject) - 包注入提供了一个基于反射的注入器。
+  - [mxj](https://github.com/clbanning/mxj) - 将 XML 编码/解码为 JSON 或 map[string]interface{}；使用点符号路径和通配符提取值。替换 x2j 和 j2x 包。
+  - [sh](https://github.com/mvdan/sh) - 一个 shell 解析器和格式化程序
+  - [slug](https://github.com/gosimple/slug) - URL 友好的 slugify，支持多种语言。
+  - [Slugify](https://github.com/avelino/slugify) - 一个处理字符串的 Go slugify 应用程序。
+  - [toml](https://github.com/BurntSushi/toml) - TOML 配置格式（带反射的编码器/解码器）。
+  - [xpath](https://github.com/antchfx/xpath) - Go 的 XPath 包。
+  - [xquery](https://github.com/antchfx/xquery) - XQuery 允许您使用 XPath 表达式从 HTML/XML 文档中提取数据。
+
+## 自然语言处理
+
+_用于处理人类语言的库。_
+
+- [dpar](https://github.com/danieldk/dpar/) - 基于转换的统计依赖解析器。
+- [go-eco](https://github.com/ThePaw/go-eco) - 相似度、相异度和距离矩阵；多样性、公平和不平等措施；物种丰富度估算器；共倾模型。
+- [go-i18n](https://github.com/nicksnyder/go-i18n/) - 用于处理本地化文本的包和随附工具。
+- [go-mystem](https://github.com/dveselov/mystem) - CGo 绑定到 Yandex.Mystem - 俄罗斯形态分析仪。
+- [go-nlp](https://github.com/nuance/go-nlp) - 用于处理离散概率分布的实用程序和其他对 NLP 工作有用的工具。
+- [go-stem](https://github.com/agonopol/go-stem) - 搬运工词干算法的实现。
+- [go-unidecode](https://github.com/mozillazg/go-unidecode) - Unicode 文本的 ASCII 音译。
+- [go2vec](https://github.com/danieldk/go2vec) - word2vec 嵌入的阅读器和实用功能。
+- [gojieba](https://github.com/yanyiwu/gojieba) - 这是中文分词算法[jieba](https://github.com/fxsjy/jieba)的 Go 实现。
+- [golibstemmer](https://github.com/rjohnsondev/golibstemmer) - 雪球 libstemmer 库的 Go 绑定，包括 porter 2
+- [gounidecode](https://github.com/fiam/gounidecode) - Go 的 Unicode 音译（也称为 unidecode）
+- [icu](https://github.com/goodsign/icu) - icu4c C 库检测和转换功能的 Cgo 绑定。保证与版本 50.1 的兼容性。
+- [libtextcat](https://github.com/goodsign/libtextcat) - libtextcat C 库的 Cgo 绑定。保证与 2.2 版本的兼容性。
+- [MMSEGO](https://github.com/awsong/MMSEGO) - 这是一个中文分词算法[MMSEG](http://technology.chtsai.org/mmseg/)的 GO 实现。
+- [paicehusk](https://github.com/rookii/paicehusk) - Paice/Husk 词干算法的 Golang 实现
+- [porter](https://github.com/a2800276/porter) - 这是 Martin Porter 的 Porter 词干算法 C 实现的一个相当简单的移植。
+- [porter2](https://github.com/zhenjl/porter2) - 真正快速的 Porter 2 词干分析器。
+- [prose](https://github.com/jdkato/prose) - 支持标记化、词性标记、命名实体提取等的文本处理库。
+- [RAKE.go](https://github.com/Obaied/RAKE.go) - 快速自动关键字提取算法 (RAKE) 的 Go 端口
+- [segment](https://github.com/blevesearch/segment) - 用于执行 Unicode 文本分割的 Go 库，如 [Unicode 标准附件 #29](http://www.unicode.org/reports/tr29) 中所述/)
+- [sentences](https://github.com/neurosnap/sentences) - 句子标记器：将文本转换为句子列表。
+- [snowball](https://github.com/goodsign/snowball) - Go 的 Snowball 词干分析器端口（cgo 包装器）。提供词干提取功能 [Snowball native](http://snowball.tartarus.org/)。
+- [stemmer](https://github.com/dchest/stemmer) - Go 编程语言的 Stemmer 包。包括英语和德语词干分析器。
+- [textcat](https://github.com/pebbe/textcat) - 用于基于 n-gram 的文本分类的 Go 包，支持 utf-8 和原始文本
+- [whatlanggo](https://github.com/abadojack/whatlanggo) - Go 的自然语言检测包。支持 84 种语言和 24 种文字（书写系统，例如拉丁文、西里尔文等）。
+- [when](https://github.com/olebedev/when) - 具有可插入规则的自然 EN 和 RU 语言日期/时间解析器
 
-## Browser automation and emulation
+## 浏览器自动化和仿真
 
-* [chromedp](https://github.com/chromedp/chromedp) - A faster, simpler way to drive browsers supporting the Chrome DevTools Protocol
+- [chromedp](https://github.com/chromedp/chromedp) - 一种更快、更简单的方式来驱动支持 Chrome DevTools 协议的浏览器
 
-## Multiprocessing
+## 多处理
 
-* TODO
+- TODO
 
-## Asynchronous
+## 异步
 
-*Libraries for asynchronous networking programming.*
+_用于异步网络编程的库。_
 
-* TODO
+- TODO
 
-## Queue
+## 队列
 
-* [NSQ](https://github.com/nsqio/nsq) - A realtime distributed messaging platform.
-* [NATS](https://github.com/nats-io/go-nats) - Golang client for NATS, the cloud native messaging system.
+- [NSQ](https://github.com/nsqio/nsq) - 一个实时分布式消息传递平台。
+- [NATS](https://github.com/nats-io/go-nats) - 用于 NATS（云原生消息传递系统）的 Golang 客户端。
 
-## Email
+## 电子邮件
 
-*Libraries for parsing email.*
+_用于解析电子邮件的库。_
 
-* [douceur](https://github.com/aymerick/douceur) - CSS inliner for your HTML emails.
-* [email](https://github.com/jordan-wright/email) - A robust and flexible email library for Go.
-* [go-dkim](https://github.com/toorop/go-dkim) - A DKIM library, to sign & verify email.
-* [go-imap](https://github.com/emersion/go-imap) - An IMAP library for clients and servers
-* [go-message](https://github.com/emersion/go-message) - A streaming library for the Internet Message Format and mail messages
-* [Gomail](https://github.com/go-gomail/gomail/) - Gomail is a very simple and powerful package to send emails.
-* [Hectane](https://github.com/hectane/hectane) - Lightweight SMTP client providing an HTTP API
-* [hermes](https://github.com/matcornic/hermes) - Golang package that generates clean, responsive HTML e-mails
-* [MailHog](https://github.com/mailhog/MailHog) - Email and SMTP testing with web and API interface
-* [SendGrid](https://github.com/sendgrid/sendgrid-go) - SendGrid's Go library for sending email
-* [smtp](https://github.com/mailhog/smtp) - SMTP server protocol state machine
+- [douceur](https://github.com/aymerick/douceur) - 用于 HTML 电子邮件的 CSS 内联。
+- [email](https://github.com/jordan-wright/email) - 一个强大而灵活的 Go 电子邮件库。
+- [go-dkim](https://github.com/toorop/go-dkim) - 一个 DKIM 库，用于签名和验证电子邮件。
+- [go-imap](https://github.com/emersion/go-imap) - 用于客户端和服务器的 IMAP 库
+- [go-message](https://github.com/emersion/go-message) - Internet 消息格式和邮件消息的流媒体库
+- [Gomail](https://github.com/go-gomail/gomail/) - Gomail 是一个非常简单而强大的电子邮件发送包。
+- [Hectane](https://github.com/hectane/hectane) - 提供 HTTP API 的轻量级 SMTP 客户端
+- [hermes](https://github.com/matcornic/hermes) - 生成干净、响应式 HTML 电子邮件的 Golang 包
+- [MailHog](https://github.com/mailhog/MailHog) - 使用 Web 和 API 接口进行电子邮件和 SMTP 测试
+- [SendGrid](https://github.com/sendgrid/sendgrid-go) - SendGrid 用于发送电子邮件的 Go 库
+- [smtp](https://github.com/mailhog/smtp) - SMTP 服务器协议状态机
 
-## URL and Network Address Manipulation
+## URL 和网络地址操作
 
-*Libraries for parsing/modifying URLs and network addresses.*
+_用于解析/修改 URL 和网络地址的库。_
 
-* URL
-  * [net/url](https://golang.org/pkg/net/url/)
-* Network Address
-  * TODO
+- 网址
+  - [net/url](https://golang.org/pkg/net/url/)
+- 网络地址
+  - TODO
 
-## Web Content Extracting
+## 网页内容提取
 
-*Libraries for extracting web contents.*
+_用于提取网页内容的库。_
 
-* Text and Meta Data from HTML pages
-* [x/net/html](golang.org/x/net/html)
+- HTML 页面中的文本和元数据
+- [x/net/html](golang.org/x/net/html)
 
-## WebSocket
+## 网络套接字
 
-*Libraries for working with WebSocket.*
+_使用 WebSocket 的库。_
 
-* [gorilla/websocket](https://github.com/gorilla/websocket)
+- [gorilla/websocket](https://github.com/gorilla/websocket)
 
-## DNS Resolving
+## DNS 解析
 
-* [net](https://golang.org/pkg/net/) - Built-in some DNS related functions.
-* [miekg/dns](https://github.com/miekg/dns) - A DNS library in Go.
+- [net](https://golang.org/pkg/net/) - 内置一些 DNS 相关功能。
+- [miekg/dns](https://github.com/miekg/dns) - Go 中的 DNS 库。
 
-## Computer Vision
+## 计算机视觉
 
-* TODO
+- TODO
 
-## Proxy Server
+## 代理服务器
 
-* [gin](https://github.com/codegangsta/gin) - Live reload utility for Go web servers.
-* [Caddy](https://github.com/mholt/caddy) - Fast, cross-platform HTTP/2 web server with automatic HTTPS, also can serve as a reverse proxy server.
-
-## Other Golang lists
-
-* TODO
-
-* Something
-  * TODO
-
-## Natural Language Processing
-
-*Libraries for working with human languages.*
-
-* [dpar](https://github.com/danieldk/dpar/) - Transition-based statistical dependency parser.
-* [go-eco](https://github.com/ThePaw/go-eco) - Similarity, dissimilarity and distance matrices; diversity, equitability and inequality measures; species richness estimators; coenocline models.
-* [go-i18n](https://github.com/nicksnyder/go-i18n/) - A package and an accompanying tool to work with localized text.
-* [go-mystem](https://github.com/dveselov/mystem) - CGo bindings to Yandex.Mystem - russian morphology analyzer.
-* [go-nlp](https://github.com/nuance/go-nlp) - Utilities for working with discrete probability distributions and other tools useful for doing NLP work.
-* [go-stem](https://github.com/agonopol/go-stem) - Implementation of the porter stemming algorithm.
-* [go-unidecode](https://github.com/mozillazg/go-unidecode) - ASCII transliterations of Unicode text.
-* [go2vec](https://github.com/danieldk/go2vec) - Reader and utility functions for word2vec embeddings.
-* [gojieba](https://github.com/yanyiwu/gojieba) - This is a Go implementation of [jieba](https://github.com/fxsjy/jieba) which a Chinese word splitting algorithm.
-* [golibstemmer](https://github.com/rjohnsondev/golibstemmer) - Go bindings for the snowball libstemmer library including porter 2
-* [gounidecode](https://github.com/fiam/gounidecode) - Unicode transliterator (also known as unidecode) for Go
-* [icu](https://github.com/goodsign/icu) - Cgo binding for icu4c C library detection and conversion functions. Guaranteed compatibility with version 50.1.
-* [libtextcat](https://github.com/goodsign/libtextcat) - Cgo binding for libtextcat C library. Guaranteed compatibility with version 2.2.
-* [MMSEGO](https://github.com/awsong/MMSEGO) - This is a GO implementation of [MMSEG](http://technology.chtsai.org/mmseg/) which a Chinese word splitting algorithm.
-* [paicehusk](https://github.com/rookii/paicehusk) - Golang implementation of the Paice/Husk Stemming Algorithm
-* [porter](https://github.com/a2800276/porter) - This is a fairly straightforward port of Martin Porter's C implementation of the Porter stemming algorithm.
-* [porter2](https://github.com/zhenjl/porter2) - Really fast Porter 2 stemmer.
-* [prose](https://github.com/jdkato/prose) - A library for text processing that supports tokenization, part-of-speech tagging, named-entity extraction, and more.
-* [RAKE.go](https://github.com/Obaied/RAKE.go) - A Go port of the Rapid Automatic Keyword Extraction Algorithm (RAKE)
-* [segment](https://github.com/blevesearch/segment) - A Go library for performing Unicode Text Segmentation as described in [Unicode Standard Annex #29](http://www.unicode.org/reports/tr29/)
-* [sentences](https://github.com/neurosnap/sentences) - A sentence tokenizer:  converts text into a list of sentences.
-* [snowball](https://github.com/goodsign/snowball) - Snowball stemmer port (cgo wrapper) for Go. Provides word stem extraction functionality [Snowball native](http://snowball.tartarus.org/).
-* [stemmer](https://github.com/dchest/stemmer) - Stemmer packages for Go programming language. Includes English and German stemmers.
-* [textcat](https://github.com/pebbe/textcat) - A Go package for n-gram based text categorization, with support for utf-8 and raw text
-* [whatlanggo](https://github.com/abadojack/whatlanggo) - A natural language detection package for Go. Supports 84 languages and 24 scripts (writing systems e.g. Latin, Cyrillic, etc).
-* [when](https://github.com/olebedev/when) - A natural EN and RU language date/time parser with pluggable rules
-
-## Browser automation and emulation
-
-* TODO
-
-## Multiprocessing
-
-* TODO
-
-## Asynchronous
-
-*Libraries for asynchronous networking programming.*
-
-* TODO
-
-## Queue
-
-* [NSQ](https://github.com/nsqio/nsq) - A realtime distributed messaging platform.
-* [NATS](https://github.com/nats-io/go-nats) - Golang client for NATS, the cloud native messaging system.
-
-## Email
-
-*Libraries for parsing email.*
-
-* [douceur](https://github.com/aymerick/douceur) - CSS inliner for your HTML emails.
-* [email](https://github.com/jordan-wright/email) - A robust and flexible email library for Go.
-* [go-dkim](https://github.com/toorop/go-dkim) - A DKIM library, to sign & verify email.
-* [go-imap](https://github.com/emersion/go-imap) - An IMAP library for clients and servers
-* [go-message](https://github.com/emersion/go-message) - A streaming library for the Internet Message Format and mail messages
-* [Gomail](https://github.com/go-gomail/gomail/) - Gomail is a very simple and powerful package to send emails.
-* [Hectane](https://github.com/hectane/hectane) - Lightweight SMTP client providing an HTTP API
-* [hermes](https://github.com/matcornic/hermes) - Golang package that generates clean, responsive HTML e-mails
-* [MailHog](https://github.com/mailhog/MailHog) - Email and SMTP testing with web and API interface
-* [SendGrid](https://github.com/sendgrid/sendgrid-go) - SendGrid's Go library for sending email
-* [smtp](https://github.com/mailhog/smtp) - SMTP server protocol state machine
-
-## URL and Network Address Manipulation
-
-*Libraries for parsing/modifying URLs and network addresses.*
-
-* URL
-  * [net/url](https://golang.org/pkg/net/url/)
-* Network Address
-  * TODO
-
-## Web Content Extracting
-
-*Libraries for extracting web contents.*
-
-* Text and Meta Data from HTML pages
-* [x/net/html](golang.org/x/net/html)
-
-## WebSocket
-
-*Libraries for working with WebSocket.*
-
-* [gorilla/websocket](https://github.com/gorilla/websocket)
-
-## DNS Resolving
-
-* [net](https://golang.org/pkg/net/) - Built-in some DNS related functions.
-* [miekg/dns](https://github.com/miekg/dns) - A DNS library in Go.
-
-## Computer Vision
-
-* TODO
-
-## Proxy Server
-
-* [gin](https://github.com/codegangsta/gin) - Live reload utility for Go web servers.
-* [Caddy](https://github.com/mholt/caddy) - Fast, cross-platform HTTP/2 web server with automatic HTTPS, also can serve as a reverse proxy server.
-
-## Other Golang lists
-* TODO
+- [gin](https://github.com/codegangsta/gin) - Go Web 服务器的实时重新加载实用程序。
+- [Caddy](https://github.com/mholt/caddy) - 快速、跨平台的 HTTP/2 网络服务器，带有自动 HTTPS，也可以作为反向代理服务器。
