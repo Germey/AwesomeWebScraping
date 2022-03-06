@@ -4,7 +4,7 @@
 
 收集用于网络爬虫和数据处理的工具、编程库和网络服务的列表，会持续更新。
 
-## 各个编程语言
+## 编程语言
 
 - [Python](http://github.com/lorien/web-scraping/blob/master/python.md)
 - [PHP](http://github.com/lorien/web-scraping/blob/master/php.md)
