@@ -4,7 +4,7 @@
 
 ## 内容
 
-- [网络](#network)
+- [网络请求库](#network)
 - [网页抓取](#web-scraping)
 - [HTML/XML](#htmlxml)
 - [文本处理](#text-processing)
@@ -29,9 +29,9 @@
 - [JavaScript 引擎绑定](#javascript-engine-bindings)
 - [其他 Python 列表](#other-python-lists)
 
-＃＃ 网络
+## 网络
 
-### 网络：一般
+### 网络请求库：通用
 
 - [urllib](https://docs.python.org/3.4/library/urllib.html?highlight=urllib#module-urllib) - 网络库 (stdlib)
 - [请求](https://github.com/kennethreitz/requests) - 网络库
@@ -60,7 +60,7 @@
 - [scapy](https://github.com/secdev/scapy) - 强大的基于 Python 的交互式数据包操作程序和库
 - [impacket](https://github.com/SecureAuthCorp/impacket/) - 对网络协议数据包的低级编程访问
 
-##网页抓取
+## 网页抓取
 
 ### 网页抓取：框架
 
@@ -80,9 +80,7 @@
 - [requests-html](https://github.com/kennethreitz/requests-html) - Pythonic HTML Parsing for Humans。
 - [ScrapydWeb](https://github.com/my8100/scrapydweb) - Scrapyd 集群管理的全功能 Web UI，支持 Scrapy 日志分析&可视化、自动打包、定时任务、邮件通知等。
 - [Starbelly](https://github.com/HyperionGray/starbelly) - Starbelly 是一个用户友好且高度可配置的网络爬虫前端。
-- [Gerapy](https://github.com/Gerapy/Gerapy) - 基于 Scrapy, Scrapyd, Django an 的分布式爬虫管理框架
-
-d Vue.js
+- [Gerapy](https://github.com/Gerapy/Gerapy) - 基于 Scrapy, Scrapyd, Django、Vue.js 的分布式爬虫管理框架。
 
 ### 网页抓取：绕过保护
 

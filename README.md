@@ -1,6 +1,6 @@
 # 🇨🇳 Awesome Web Scraping
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![jaywcjlove/sb](https://jaywcjlove.github.io/sb/lang/english.svg)](https://github.com/lorien/awesome-web-scraping)
+[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re) [![Germey/AwesomeWebScraping](https://wangchujiang.com/sb/lang/chinese.svg)](https://github.com/Germey/AwesomeWebScraping)
 
 收集用于网络爬虫和数据处理的工具、编程库和网络服务的列表，会持续更新。
 
