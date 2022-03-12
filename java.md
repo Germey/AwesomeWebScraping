@@ -1,25 +1,24 @@
 # Java 网页抓取
 
-此列表包含与 Web 抓取和数据处理相关的 Java 库
+此列表包含与 Web 抓取和数据处理相关的 Java 库。
 
-- [导航](#javascript-web-scraping)
-  - [网络请求工具](#network)
-  - [网页抓取框架](#web-scraping-frameworks)
-  - [HTML/XML 解析](#htmlxml-解析)
-  - [文本处理](#text-processing)
-  - [特定格式处理](#specific-formats-processing)
-  - [自然语言处理](#natural-language-processing)
-  - [浏览器自动化和仿真](#browser-automation-and-emulation)
-  - [多处理](#multiprocessing)
-  - [队列](#queue)
-  - [电子邮件](#email)
-  - [URL 和网络地址操作](#url-and-network-address-manipulation)
-  - [网页内容提取](#web-content-extracting)
-  - [异步](#异步)
-  - [WebSocket](#websocket)
-  - [DNS 解析](#dns-resolving)
-  - [计算机视觉](#computer-vision)
-  - [代理服务器](#proxy-server)
+- [网络请求工具](#网络请求工具)
+- [网页抓取框架](#网页抓取框架)
+- [HTML/XML](#HTML/XML)
+- [文本处理](#文本处理)
+- [特定格式处理](#特定格式处理)
+- [自然语言处理](#自然语言处理)
+- [浏览器自动化和仿真](#浏览器自动化和仿真)
+- [多进程](#多进程)
+- [队列](#队列)
+- [电子邮件](#电子邮件)
+- [URL 和网络地址操作](#URL和网络地址操作)
+- [网页内容提取](#网页内容提取)
+- [异步](#异步)
+- [WebSocket](#WebSocket)
+- [DNS 解析](#DNS解析)
+- [计算机视觉](#计算机视觉)
+- [代理服务器](#代理服务器)
 
 ## 网络请求工具
 
@@ -37,7 +36,7 @@
 - [Crawler4j](https://github.com/yasserg/crawler4j)
 - [StormCrawler](https://github.com/DigitalPebble/storm-crawler)
 
-## HTML/XML 解析
+## HTML/XML
 
 - [Apache Tika](https://tika.apache.org/)
 
@@ -67,7 +66,7 @@ _用于处理人类语言的库。_
 
 - [htmlunit](http://htmlunit.sourceforge.net/)
 
-## 多处理
+## 多进程
 
 - TODO
 

@@ -1,28 +1,27 @@
 # PHP 网页抓取
 
-此列表包含与网页抓取和数据处理相关的 PHP 库
+此列表包含与网页抓取和数据处理相关的 PHP 库。
 
-- [PHP 网页抓取](#php-web-scraping)
-  - [网络请求工具](#网络请求工具)
-  - [网页抓取框架](#HTML/XML解析)
-  - [HTML/XML 解析](#htmlxml-解析)
-  - [文本处理](#text-processing)
-  - [特定格式处理](#specific-formats-processing)
-  - [自然语言处理](#natural-language-processing)
-  - [浏览器自动化和仿真](#browser-automation-and-emulation)
-  - [多处理](#multiprocessing)
-  - [队列](#queue)
-  - [云计算](#cloud-computing)
-  - [电子邮件](#email)
-  - [URL 操作](#url-manipulation)
-  - [网页内容提取](#web-content-extracting)
-  - [异步](#异步)
-  - [WebSocket](#websocket)
-  - [DNS 解析](#dns-resolving)
-  - [计算机视觉](#computer-vision)
-  - [地理编码](#geocoding)
-  - [API 客户端](#api-clients)
-  - [其他 PHP 列表](#other-php-lists)
+- [网络请求工具](#网络请求工具)
+- [网页抓取框架](#HTML/XML解析)
+- [HTML/XML](#HTML/XML)
+- [文本处理](#文本处理)
+- [特定格式处理](#特定格式处理)
+- [自然语言处理](#自然语言处理)
+- [浏览器自动化和仿真](#浏览器自动化和仿真)
+- [多进程](#多进程)
+- [队列](#队列)
+- [云计算](#云计算)
+- [电子邮件](#电子邮件)
+- [URL 操作](#URL操作)
+- [网页内容提取](#网页内容提取)
+- [异步](#异步)
+- [WebSocket](#WebSocket)
+- [DNS 解析](#DNS解析)
+- [计算机视觉](#计算机视觉)
+- [地理编码](#地理编码)
+- [API 客户端](#API客户端)
+- [其他 PHP 列表](#其他PHP列表)
 
 ## 网络请求工具
 
@@ -37,7 +36,7 @@
 
 - TODO
 
-## HTML/XML 解析
+## HTML/XML
 
 - [HTML5 PHP](https://github.com/Masterminds/html5-php) - HTML5 解析器和序列化程序库。
 - [QueryPath](https://github.com/technosophos/querypath) - 一个类似 jQuery 的库，用于在 PHP 中处理 XML 和 HTML 文档。它现在通过 HTML5-PHP 项目包含对 HTML5 的支持。
@@ -87,7 +86,6 @@ _用于解析和处理特定文本格式的库。_
   - [Parsedown](https://github.com/erusev/parsedown) - 另一个 Markdown 解析器。
   - [Ciconia](https://github.com/kzykhys/Ciconia) - 另一个 Markdown 解析器
   - [Cebe Markdown](https://github.com/cebe/markdown) - 一个快速且可扩展的 Markdown 解析器。
-
 - BBCode
   - [Decoda](https://github.com/milesj/decoda) - 用于 BBCode 样式标记的轻量级词法字符串解析器。
 - JSON
@@ -105,16 +103,16 @@ _用于解析和处理特定文本格式的库。_
 
 _用于处理人类语言的库。_
 
-- [PHP NlpTools](https://github.com/angeloskath/php-nlp-tools) - PHP 中的自然语言处理工具
-- [nlpTools](https://github.com/atrilla/nlptools) - PHP 的自然语言处理工具包
+- [PHP NlpTools](https://github.com/angeloskath/php-nlp-tools) - PHP 中的自然语言处理工具。
+- [nlpTools](https://github.com/atrilla/nlptools) - PHP 的自然语言处理工具包。
 
 ## 浏览器自动化和仿真
 
 - [php-webdriver](https://github.com/facebook/php-webdriver) - webdriver 的 php 客户端。
 - [PHP PhantomJS](https://github.com/jonnnnyw/php-phantomjs) - 通过 PHP 执行 PhantomJS 命令
-- [Mink](https://github.com/minkphp/Mink) - 用于多个浏览器模拟器的通用 API（selenium、zombie.js、goutte）
+- [Mink](https://github.com/minkphp/Mink) - 用于多个浏览器模拟器的通用 API（selenium、zombie.js、goutte）。
 
-## 多处理
+## 多进程
 
 - [Spork](https://github.com/kriswallsmith/spork) - 一个进程分叉库。
 
@@ -138,7 +136,7 @@ _用于异步网络编程的库。_
 
 ## 云计算
 
-- 去做
+- TODO
 
 ## 电子邮件
 
@@ -162,7 +160,7 @@ _用于解析 URL 的库。_
   - [Embera](https://github.com/mpratt/Embera) - 一个 Oembed 消费者库。
   - [Embed](https://github.com/oscarotero/Embed) - 一个很棒的库，用于从网页获取有用的信息。
 - 视频
-  - [Youtube-Downloader](https://github.com/jeckman/YouTube-Downloader) - 用于从 youtube 下载视频的 PHP 脚本；还将 youtube 提要解析为播客的 RSS 附件
+  - [Youtube-Downloader](https://github.com/jeckman/YouTube-Downloader) - 用于从 youtube 下载视频的 PHP 脚本；还将 youtube 提要解析为播客的 RSS 附件。
 
 ## 网络套接字
 
@@ -174,11 +172,11 @@ _使用 WebSocket 的库。_
 
 ## DNS 解析
 
-- [Net_DNS2](https://github.com/mikepultz/netdns2) - 原生 PHP DNS 解析器和更新器
+- [Net_DNS2](https://github.com/mikepultz/netdns2) - 原生 PHP DNS 解析器和更新器。
 
 ## 计算机视觉
 
-- [OpenCV-for-PHP](https://github.com/mgdm/OpenCV-for-PHP) - PHP 的 OpenCV 绑定
+- [OpenCV-for-PHP](https://github.com/mgdm/OpenCV-for-PHP) - PHP 的 OpenCV 绑定。
 
 ## 地理编码
 

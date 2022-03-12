@@ -1,21 +1,20 @@
-# Web 抓取 Web 服务
+# Web 抓取服务
 
 ## Web 数据提取服务
 
-- [Dataflow kit](https://dataflowkit.com) - 使用简单的点击式工具包将网站数据转换为结构化数据
-- [ProxyCrawl](https://proxycrawl.com) - 无块、验证码或代理抓取任何网站
-- [ScraperAPI](https://www.scraperapi.com) - 管理代理的服务
-  和无头浏览器，暴露一个 API 端点来抓取任何 url。
+- [Dataflow kit](https://dataflowkit.com) - 使用简单的点击式工具包将网站数据转换为结构化数据。
+- [ProxyCrawl](https://proxycrawl.com) - 无块、验证码或代理抓取任何网站。
+- [ScraperAPI](https://www.scraperapi.com) - 管理代理的服务和无头浏览器，暴露一个 API 端点来抓取任何 url。
 - [import.io](https://import.io/)
 - [ScraperWiki](https://scraperwiki.com/about)
 - [Mozenda](https://www.mozenda.com/)
 - [PhantomJs.Cloud](https://phantomjscloud.com/)
 - [CloudScrape](http://cloudscrape.com/)
 - [DiffBot](http://www.diffbot.com/)
-- [Apify](https://www.apify.com/) - 无服务器网络抓取、数据提取和网络自动化平台
-- [Portia](http://scrapinghub.com/portia/);也在 GitHub 上：[scrapinghub/portia](https://github.com/scrapinghub/portia)
+- [Apify](https://www.apify.com/) - 无服务器网络抓取、数据提取和网络自动化平台。
+- [Portia](http://scrapinghub.com/portia/) - 也在 GitHub 上：[scrapinghub/portia](https://github.com/scrapinghub/portia)
 - [Dexi](https://dexi.io)
-- [Morph.io](https://morph.io) 免费，完全[开源](https://github.com/openaustralia/morph) 服务
+- [Morph.io](https://morph.io) - 免费，完全[开源](https://github.com/openaustralia/morph) 服务。
 - [Page.REST](https://page.rest/)
 - [ParseHub](https://www.parsehub.com/)
 - [WrapAPI](https://wrapapi.com/)

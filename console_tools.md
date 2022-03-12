@@ -2,9 +2,8 @@
 
 与网页抓取和数据处理相关的控制台工具
 
-- [控制台工具](#console-tools)
-  - [HTTP 客户端](#http-clients)
-  - [特定格式处理](#specific-formats-processing)
+- [HTTP 客户端](#HTTP客户端)
+- [特定格式处理](#特定格式处理)
 
 ## HTTP 客户端
 
@@ -26,4 +25,4 @@
 
 ## 其他
 
-- [structured-text-tools](https://github.com/dbohdan/structured-text-tools) - 用于操作结构化文本数据的命令行工具列表
+- [structured-text-tools](https://github.com/dbohdan/structured-text-tools) - 用于操作结构化文本数据的命令行工具列表。

@@ -1,33 +1,32 @@
 # Golang 网页抓取
 
-此列表包含与 Web 抓取和数据处理相关的 Golang 库
+此列表包含与 Web 抓取和数据处理相关的 Golang 库。
 
-- [Golang 网页抓取](#javascript-web-scraping)
-  - [网络请求工具](#network)
-  - [网页抓取框架](#web-scraping-frameworks)
-  - [HTML/XML 解析](#htmlxml-解析)
-  - [文本处理](#text-processing)
-  - [特定格式处理](#specific-formats-processing)
-  - [自然语言处理](#natural-language-processing)
-  - [浏览器自动化和仿真](#browser-automation-and-emulation)
-  - [多处理](#multiprocessing)
-  - [队列](#queue)
-  - [电子邮件](#email)
-  - [URL 和网络地址操作](#url-and-network-address-manipulation)
-  - [网页内容提取](#web-content-extracting)
-  - [异步](#异步)
-  - [WebSocket](#websocket)
-  - [DNS 解析](#dns-resolving)
-  - [计算机视觉](#computer-vision)
-  - [代理服务器](#proxy-server)
+- [网络请求工具](#网络请求工具)
+- [网页抓取框架](#网页抓取框架)
+- [HTML/XML](#HTML/XML)
+- [文本处理](#文本处理)
+- [特定格式处理](#特定格式处理)
+- [自然语言处理](#自然语言处理)
+- [浏览器自动化和仿真](#浏览器自动化和仿真)
+- [多进程](#多进程)
+- [队列](#队列)
+- [电子邮件](#电子邮件)
+- [URL 和网络地址操作](#URL和网络地址操作)
+- [网页内容提取](#网页内容提取)
+- [异步](#异步)
+- [WebSocket](#WebSocket)
+- [DNS 解析](#DNS解析)
+- [计算机视觉](#计算机视觉)
+- [代理服务器](#代理服务器)
 
 ## 网络请求工具
 
 - 通用
-  - [net](https://golang.org/pkg/net/) - 操作网络的内置包
+  - [net](https://golang.org/pkg/net/) - 操作网络的内置包。
   - [net/http](https://golang.org/pkg/net/http/) - 能够进行 HTTP 编程的内置包
 - 异步
-  - [goroutine](https://tour.golang.org/concurrency/1) - Golang 中的 Concurrency
+  - [goroutine](https://tour.golang.org/concurrency/1) - Golang 中的 Concurrency。
 
 ## Web 抓取框架
 
@@ -38,8 +37,9 @@
 - [colly](https://github.com/gocolly/colly) - 快速优雅的抓取框架
 - [dataflowkit](https://github.com/slotix/dataflowkit) - 数据流工具包 - 从网站中提取结构化数据。
 - [ferret](https://github.com/MontFerret/ferret) - 具有声明性查询语言的网络抓取工具。
+- [crawlab](https://github.com/crawlab-team/crawlab) - 功能强大的爬虫框架。
 
-## HTML/XML 解析
+## HTML/XML
 
 - [encoding/xml](https://golang.org/pkg/encoding/xml/) - 内置包实现了一个简单的 XML 1.0 解析器。
 
@@ -55,32 +55,31 @@ _用于解析和操作纯文本的库。_
 _用于解析和处理特定文本格式的库。_
 
 - 通用
-
   - [encoding/json](https://golang.org/pkg/encoding/json/) - 内置包实现了 RFC 4627 中定义的 JSON 编码和解码。
-  - [allot](https://github.com/sbstjn/allot) - CLI 工具和机器人的占位符和通配符文本解析
-  - [bbConvert](https://github.com/CalebQ42/bbConvert) - 将 bbCode 转换为 HTML，允许您添加对自定义 bbCode 标签的支持
-  - [blackfriday](https://github.com/russross/blackfriday) - Go 中的 Markdown 处理器
-  - [bluemonday](https://github.com/microcosm-cc/bluemonday) - HTML Sanitizer
-  - [editorconfig-core-go](https://github.com/editorconfig/editorconfig-core-go) - Go 的 Editorconfig 文件解析器和操纵器
+  - [allot](https://github.com/sbstjn/allot) - CLI 工具和机器人的占位符和通配符文本解析。
+  - [bbConvert](https://github.com/CalebQ42/bbConvert) - 将 bbCode 转换为 HTML，允许您添加对自定义 bbCode 标签的支持。
+  - [blackfriday](https://github.com/russross/blackfriday) - Go 中的 Markdown 处理器。
+  - [bluemonday](https://github.com/microcosm-cc/bluemonday) - HTML Sanitizer。
+  - [editorconfig-core-go](https://github.com/editorconfig/editorconfig-core-go) - Go 的 Editorconfig 文件解析器和操纵器。
   - [enca](https://github.com/endeveit/enca) - [libenca](http://cihar.com/software/enca/) 的最小 cgo 绑定。
-  - [genex](https://github.com/alixaxel/genex) - 计算正则表达式并将其扩展为所有匹配的字符串
+  - [genex](https://github.com/alixaxel/genex) - 计算正则表达式并将其扩展为所有匹配的字符串。
   - [github_flavored_markdown](https://godoc.org/github.com/shurcooL/github_flavored_markdown) - GitHub 风格的 Markdown 渲染器（使用 blackfriday），带有围栏代码块突出显示，可点击的标题锚链接。
   - [go-humanize](https://github.com/dustin/go-humanize) - 将时间、数字和内存大小格式化为人类可读格式。
   - [go-nmea](https://github.com/adrianmo/go-nmea) - Go 语言的 NMEA 解析器库。
   - [go-runewidth](https://github.com/mattn/go-runewidth) - 获取字符或字符串的固定宽度的函数。
   - [go-slugify](https://github.com/mozillazg/go-slugify) - 使用多种语言支持制作漂亮的 slug。
-  - [go-vcard](https://github.com/emersion/go-vcard) - 解析和格式化 vCard
-  - [gofeed](https://github.com/mmcdole/gofeed) - 在 Go 中解析 RSS 和 Atom 提要
+  - [go-vcard](https://github.com/emersion/go-vcard) - 解析和格式化 vCard。
+  - [gofeed](https://github.com/mmcdole/gofeed) - 在 Go 中解析 RSS 和 Atom 提要。
   - [gographviz](https://github.com/awalterschulze/gographviz) - 解析 Graphviz DOT 语言。
   - [gommon/bytes](https://github.com/labstack/gommon/tree/master/bytes) - 将字节格式化为字符串。
-  - [gonameparts](https://github.com/polera/gonameparts) - 将人名解析为单独的名称部分
+  - [gonameparts](https://github.com/polera/gonameparts) - 将人名解析为单独的名称部分。
   - [GoQuery](https://github.com/PuerkitoBio/goquery) - GoQuery 为 Go 语言带来了类似于 jQuery 的语法和一组特性。
   - [goregen](https://github.com/zach-klippenstein/goregen) - 从正则表达式生成随机字符串的库。
   - [gotext](https://github.com/leonelquinteros/gotext) - Go 的 GNU gettext 实用程序。
   - [guesslanguage](https://github.com/endeveit/guesslanguage) - 确定 unicode 文本的自然语言的函数。
   - [inject](https://github.com/facebookgo/inject) - 包注入提供了一个基于反射的注入器。
   - [mxj](https://github.com/clbanning/mxj) - 将 XML 编码/解码为 JSON 或 map[string]interface{}；使用点符号路径和通配符提取值。替换 x2j 和 j2x 包。
-  - [sh](https://github.com/mvdan/sh) - 一个 shell 解析器和格式化程序
+  - [sh](https://github.com/mvdan/sh) - 一个 shell 解析器和格式化程序。
   - [slug](https://github.com/gosimple/slug) - URL 友好的 slugify，支持多种语言。
   - [Slugify](https://github.com/avelino/slugify) - 一个处理字符串的 Go slugify 应用程序。
   - [toml](https://github.com/BurntSushi/toml) - TOML 配置格式（带反射的编码器/解码器）。
@@ -99,30 +98,32 @@ _用于处理人类语言的库。_
 - [go-stem](https://github.com/agonopol/go-stem) - 搬运工词干算法的实现。
 - [go-unidecode](https://github.com/mozillazg/go-unidecode) - Unicode 文本的 ASCII 音译。
 - [go2vec](https://github.com/danieldk/go2vec) - word2vec 嵌入的阅读器和实用功能。
-- [gojieba](https://github.com/yanyiwu/gojieba) - 这是中文分词算法[jieba](https://github.com/fxsjy/jieba)的 Go 实现。
-- [golibstemmer](https://github.com/rjohnsondev/golibstemmer) - 雪球 libstemmer 库的 Go 绑定，包括 porter 2
-- [gounidecode](https://github.com/fiam/gounidecode) - Go 的 Unicode 音译（也称为 unidecode）
+- [gojieba](https://github.com/yanyiwu/gojieba) - 中文分词算法。
+- [jieba](https://github.com/fxsjy/jieba) - jieba 的 Go 实现。
+- [golibstemmer](https://github.com/rjohnsondev/golibstemmer) - 雪球 libstemmer 库的 Go 绑定，包括 porter 2。
+- [gounidecode](https://github.com/fiam/gounidecode) - Go 的 Unicode 音译（也称为 unidecode）。
 - [icu](https://github.com/goodsign/icu) - icu4c C 库检测和转换功能的 Cgo 绑定。保证与版本 50.1 的兼容性。
 - [libtextcat](https://github.com/goodsign/libtextcat) - libtextcat C 库的 Cgo 绑定。保证与 2.2 版本的兼容性。
-- [MMSEGO](https://github.com/awsong/MMSEGO) - 这是一个中文分词算法[MMSEG](http://technology.chtsai.org/mmseg/)的 GO 实现。
-- [paicehusk](https://github.com/rookii/paicehusk) - Paice/Husk 词干算法的 Golang 实现
+- [MMSEGO](https://github.com/awsong/MMSEGO) - 这是一个中文分词算法，[MMSEG](http://technology.chtsai.org/mmseg/)的 GO 实现。
+- [paicehusk](https://github.com/rookii/paicehusk) - Paice/Husk 词干算法的 Golang 实现。
 - [porter](https://github.com/a2800276/porter) - 这是 Martin Porter 的 Porter 词干算法 C 实现的一个相当简单的移植。
 - [porter2](https://github.com/zhenjl/porter2) - 真正快速的 Porter 2 词干分析器。
 - [prose](https://github.com/jdkato/prose) - 支持标记化、词性标记、命名实体提取等的文本处理库。
-- [RAKE.go](https://github.com/Obaied/RAKE.go) - 快速自动关键字提取算法 (RAKE) 的 Go 端口
+- [RAKE.go](https://github.com/Obaied/RAKE.go) - 快速自动关键字提取算法 (RAKE) 的 Go 端口。
 - [segment](https://github.com/blevesearch/segment) - 用于执行 Unicode 文本分割的 Go 库，如 [Unicode 标准附件 #29](http://www.unicode.org/reports/tr29) 中所述/)
 - [sentences](https://github.com/neurosnap/sentences) - 句子标记器：将文本转换为句子列表。
-- [snowball](https://github.com/goodsign/snowball) - Go 的 Snowball 词干分析器端口（cgo 包装器）。提供词干提取功能 [Snowball native](http://snowball.tartarus.org/)。
+- [snowball](https://github.com/goodsign/snowball) - Go 的 Snowball 词干分析器端口（cgo 包装器）。提供词干提取功能。
+- [Snowball native](http://snowball.tartarus.org/)
 - [stemmer](https://github.com/dchest/stemmer) - Go 编程语言的 Stemmer 包。包括英语和德语词干分析器。
-- [textcat](https://github.com/pebbe/textcat) - 用于基于 n-gram 的文本分类的 Go 包，支持 utf-8 和原始文本
+- [textcat](https://github.com/pebbe/textcat) - 用于基于 n-gram 的文本分类的 Go 包，支持 utf-8 和原始文本。
 - [whatlanggo](https://github.com/abadojack/whatlanggo) - Go 的自然语言检测包。支持 84 种语言和 24 种文字（书写系统，例如拉丁文、西里尔文等）。
-- [when](https://github.com/olebedev/when) - 具有可插入规则的自然 EN 和 RU 语言日期/时间解析器
+- [when](https://github.com/olebedev/when) - 具有可插入规则的自然 EN 和 RU 语言日期/时间解析器。
 
 ## 浏览器自动化和仿真
 
-- [chromedp](https://github.com/chromedp/chromedp) - 一种更快、更简单的方式来驱动支持 Chrome DevTools 协议的浏览器
+- [chromedp](https://github.com/chromedp/chromedp) - 一种更快、更简单的方式来驱动支持 Chrome DevTools 协议的浏览器。
 
-## 多处理
+## 多进程
 
 - TODO
 
@@ -144,14 +145,14 @@ _用于解析电子邮件的库。_
 - [douceur](https://github.com/aymerick/douceur) - 用于 HTML 电子邮件的 CSS 内联。
 - [email](https://github.com/jordan-wright/email) - 一个强大而灵活的 Go 电子邮件库。
 - [go-dkim](https://github.com/toorop/go-dkim) - 一个 DKIM 库，用于签名和验证电子邮件。
-- [go-imap](https://github.com/emersion/go-imap) - 用于客户端和服务器的 IMAP 库
-- [go-message](https://github.com/emersion/go-message) - Internet 消息格式和邮件消息的流媒体库
+- [go-imap](https://github.com/emersion/go-imap) - 用于客户端和服务器的 IMAP 库。
+- [go-message](https://github.com/emersion/go-message) - Internet 消息格式和邮件消息的流媒体库。
 - [Gomail](https://github.com/go-gomail/gomail/) - Gomail 是一个非常简单而强大的电子邮件发送包。
-- [Hectane](https://github.com/hectane/hectane) - 提供 HTTP API 的轻量级 SMTP 客户端
-- [hermes](https://github.com/matcornic/hermes) - 生成干净、响应式 HTML 电子邮件的 Golang 包
-- [MailHog](https://github.com/mailhog/MailHog) - 使用 Web 和 API 接口进行电子邮件和 SMTP 测试
-- [SendGrid](https://github.com/sendgrid/sendgrid-go) - SendGrid 用于发送电子邮件的 Go 库
-- [smtp](https://github.com/mailhog/smtp) - SMTP 服务器协议状态机
+- [Hectane](https://github.com/hectane/hectane) - 提供 HTTP API 的轻量级 SMTP 客户端。
+- [hermes](https://github.com/matcornic/hermes) - 生成干净、响应式 HTML 电子邮件的 Golang 包。
+- [MailHog](https://github.com/mailhog/MailHog) - 使用 Web 和 API 接口进行电子邮件和 SMTP 测试。
+- [SendGrid](https://github.com/sendgrid/sendgrid-go) - SendGrid 用于发送电子邮件的 Go 库。
+- [smtp](https://github.com/mailhog/smtp) - SMTP 服务器协议状态机。
 
 ## URL 和网络地址操作
 
