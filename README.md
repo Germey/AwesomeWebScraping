@@ -16,7 +16,7 @@
 
 - [网页抓取服务](http://github.com/lorien/web-scraping/blob/master/web_services.md)
 - [控制台工具](http://github.com/lorien/web-scraping/blob/master/console_tools.md)
-- [无头浏览器](https://github.com/dhamaniasad/HeadlessBrowsers) - （几乎）所有存在的无头网络浏览器的列表。
+- [无头浏览器](https://github.com/dhamaniasad/HeadlessBrowsers) - 所有存在的无头网络浏览器的列表。
 - [DNS over HTTPS 提供商](https://github.com/curl/curl/wiki/DNS-over-HTTPS) - DNS over HTTPS 提供商列表。
 
 ## 贡献
