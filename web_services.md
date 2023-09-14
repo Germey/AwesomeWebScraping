@@ -20,6 +20,7 @@
 - [WrapAPI](https://wrapapi.com/)
 - [Agenty](https://www.agenty.com/)
 - [ScrapingBee](https://www.scrapingbee.com/) - 处理旋转代理和无头浏览器的网络抓取 API。
+- [SearchApi](https://www.searchapi.io/) - 实时 Google 及其他搜索引擎结果 API。
 - [SerpApi](https://serpapi.com/) - 访问搜索引擎结构化搜索结果的实时 API。
 - [ScrapingAnt](https://scrapingant.com/) - 具有数千个住宅代理和无头 Chrome 集群的 Web Scraping API。
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
