@@ -70,6 +70,7 @@
 - [ioweb](https://github.com/lorien/ioweb) - 基于 gevent 和 lxml 的网页抓取框架。
 - [autoscraper](https://github.com/alirezamika/autoscraper) - 一个智能、自动、轻量级的网络爬虫。
 - [frontera](https://github.com/scrapinghub/frontera) - 一个可扩展的网络爬虫框架。
+- [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai) - 一个使用 AI 进行抓取的开源库
 
 ### 网页抓取：工具
 
