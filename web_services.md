@@ -2,6 +2,7 @@
 
 ## Web 数据提取服务
 
+- [Amazon Scraper API](https://amazonscraperapi.com) - 用于 Amazon 商品详情页、搜索结果和批量 ASIN 查询的 REST API，覆盖 20 个站点，服务端处理住宅代理和 TLS 指纹模拟。注册赠送 1000 次免费请求。
 - [Dataflow kit](https://dataflowkit.com) - 使用简单的点击式工具包将网站数据转换为结构化数据。
 - [ProxyCrawl](https://proxycrawl.com) - 无块、验证码或代理抓取任何网站。
 - [ProxyClaw](https://proxyclaw.ai) - 住宅代理SDK，支持AI代理，2M+ IP，195+国家，反检测绕过，地理定位。`pip install iploop-sdk`
