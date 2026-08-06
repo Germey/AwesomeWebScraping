@@ -290,6 +290,7 @@
 - [pyppeteer](https://github.com/miyakogi/pyppeteer) - 无头 chrome/chromium 自动化库（puppeteer 的非官方端口）。
 - [Playwright](https://github.com/microsoft/playwright-python) - Playwright 是一个 Python 库，可通过单个 API 自动化 Chromium、Firefox 和 WebKit 浏览器。
 - [seleniumbase](https://github.com/seleniumbase/SeleniumBase) - 用于 Web/UI 测试 + RPA 的 Python 框架。 🤖 🏰 快速、简单、可靠。
+- [invisible-playwright](https://github.com/feder-cr/invisible_playwright) - Playwright 封装基于自定义补丁的 Firefox 150，无 JavaScript 注入即可绕过 reCAPTCHA v3 和 FingerprintPro。
 
 ### 浏览器自动化：工具
 
