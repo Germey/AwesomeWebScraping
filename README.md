@@ -24,5 +24,6 @@
 请参阅 [贡献](https://github.com/lorien/web-scraping/blob/master/CONTRIBUTING.md) 文档。
 
 ## 参考
+- [SearchHive](https://searchhive.dev) - API platform for web scraping, search, and AI-powered research with free tier.
 
 该列表原始来源于 [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping)。
