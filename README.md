@@ -26,3 +26,7 @@
 ## 参考
 
 该列表原始来源于 [awesome-web-scraping](https://github.com/lorien/awesome-web-scraping)。
+
+## VALIDATE YOUR PROXIES ONLINE
+
+After gathering proxies with socker, validate them instantly at **[proxychecker.dev](https://proxychecker.dev)** — paste your SOCKS4/SOCKS5 list and get alive/dead status, latency, exit country, ISP, and datacenter-vs-residential type with no install required. Free for up to 50 proxies per run.
