@@ -221,3 +221,4 @@ _使用 WebSocket 的库。_
 ## 其他 JavaScript 列表
 
 - [awesome-javascript](https://github.com/sorrycc/awesome-javascript)
+- [scrape-heal](https://github.com/Swastikbhat-lab/scrape-heal) - Self-healing scraper loop: detects when a site redesign breaks selectors, derives replacements from the last good run's data, and only ships a repair after re-verifying it on the live page. TypeScript.
