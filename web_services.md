@@ -28,3 +28,4 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [ReefAPI](https://reefapi.com) - 统一的网页数据 API 网关，用一个密钥访问 180+ 个数据源：电商、社交媒体、房产、招聘、旅行、新闻和金融，均返回相同结构的 JSON。
