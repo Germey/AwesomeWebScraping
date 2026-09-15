@@ -12,6 +12,11 @@
 - [JavaScript](http://github.com/lorien/web-scraping/blob/master/javascript.md)
 - [Golang](http://github.com/lorien/web-scraping/blob/master/golang.md)
 
+## 代理与反反爬服务 (Proxies)
+
+- [PXM2](https://pxm2.io/zh/) - 专为爬虫和多账号自动化打造的独享 4G/5G 移动轮换代理，提供纯净运营商 IP 和即时 API 轮换。
+- [PXM2 免费代理检测工具](https://pxm2.io/proxy-checker/) - 支持 HTTP/SOCKS5 检测、DNS 泄漏检测与 UDP 连通性测试的在线工具。
+
 ## 其他
 
 - [网页抓取服务](http://github.com/lorien/web-scraping/blob/master/web_services.md)
