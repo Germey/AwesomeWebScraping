@@ -84,6 +84,7 @@
 ### 网页抓取：绕过保护
 
 - [cloudscraper](https://github.com/venomous/cloudscraper) - 绕过 Cloudflare 的反机器人页面的 Python 模块。
+- [mirage](https://github.com/millennialdreamer/mirage) - 爬虫行为层加固工具，并附带软封禁预警雷达，在被彻底封禁前发出告警。
 
 ## HTML/XML
 
@@ -422,6 +423,7 @@
 - [twitter-scraper](https://github.com/bisguzar/twitter-scraper) - 无需身份验证即可抓取 Twitter 前端 API。
 - [Ultimate-Facebook-Scraper](https://github.com/harismuneer/Ultimate-Facebook-Scraper) - 一个爬取几乎所有关于 Facebook 用户个人资料的机器人。
 - [instagram-scraper](https://github.com/rarcega/instagram-scraper) - 抓取 Instagram 用户的照片和视频。
+- [Prism](https://github.com/millennialdreamer/prism) - 将小红书、抖音、B 站、快手的内容归一到同一套结构化字段，并给出可横向对比的分析指标。
 
 ## JavaScript 引擎绑定
 
