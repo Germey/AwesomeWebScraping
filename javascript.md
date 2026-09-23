@@ -212,6 +212,7 @@ _使用 WebSocket 的库。_
 
 - [toxy](https://github.com/h2non/toxy) - 用于模拟服务器故障场景和意外网络条件的可破解 HTTP 代理。
 - [proxy-chain](https://github.com/apifytech/proxy-chain) - 代理服务器的 Node.js 实现（想想 Squid），支持 SSL、身份验证和上游代理链。
+- [proxlane](https://github.com/proxlane/proxlane) - 自托管网关，置于 ScraperAPI、ScrapingBee、Scrapfly、Bright Data 等抓取 API 之前，自动故障转移并检测封锁页面。
 
 ## 数据结构
 

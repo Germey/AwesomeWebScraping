@@ -79,6 +79,7 @@
 - [requests-html](https://github.com/kennethreitz/requests-html) - Pythonic HTML Parsing for Humans。
 - [ScrapydWeb](https://github.com/my8100/scrapydweb) - Scrapyd 集群管理的全功能 Web UI，支持 Scrapy 日志分析&可视化、自动打包、定时任务、邮件通知等。
 - [Starbelly](https://github.com/HyperionGray/starbelly) - Starbelly 是一个用户友好且高度可配置的网络爬虫前端。
+- [scrapy-proxlane](https://github.com/proxlane/scrapy-proxlane) - Scrapy 下载器中间件，把请求经由自托管网关转发到 ScraperAPI、ScrapingBee、Scrapfly、Bright Data 和 Firecrawl，支持自动故障转移和封禁页面检测。
 - [Gerapy](https://github.com/Gerapy/Gerapy) - 基于 Scrapy, Scrapyd, Django、Vue.js 的分布式爬虫管理框架。
 
 ### 网页抓取：绕过保护
