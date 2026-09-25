@@ -412,6 +412,7 @@
 - [ProxyBroker](https://github.com/constverum/Proxybroker) - 代理 [Finder |检查器 |服务器]。
 - [shadowsocks](https://github.com/shadowsocks/shadowsocks) - 帮助您绕过防火墙的快速隧道代理（TCP 和 UDP 支持、用户管理 API、TCP 快速打开、Worker 和优雅重启、目标 IP 黑名单）。
 - [tproxy](https://github.com/benoitc/tproxy) - tproxy 是一个基于 Gevent 的简单 TCP 路由代理（第 7 层），可让您在 Python 中配置例程逻辑。
+- [scrapescope](https://github.com/ipvolt/scrapescope) - 本地计量代理，显示抓取或浏览器任务的流量去向，并在达到字节预算时停止任务。
 
 ## Whois
 
