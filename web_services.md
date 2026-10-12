@@ -28,3 +28,4 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [Proxy-sale.pro](https://proxy-sale.pro/?utm_source=germey_awesomewebscraping&utm_medium=directory&utm_campaign=residential_202610&utm_content=cn_services_20261012) - 按流量计费的住宅代理服务，提供 HTTP 连接、国家选择及轮换或粘性会话，可用于网站本地化测试。
