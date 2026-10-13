@@ -28,3 +28,7 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [Apple Podcasts Scraper (Apify Actor)](https://apify.com/taroyamada/apple-podcast-scraper) - Search Apple Podcasts shows and episodes, export to CSV/JSON, no API key.
+- [Apple Podcasts Chart Tracker (Apify Actor)](https://apify.com/taroyamada/apple-podcast-chart-tracker) - Track Apple Podcasts chart rankings by country and genre.
+- [Article Content Extractor (Apify Actor)](https://apify.com/taroyamada/article-content-extractor) - Extract clean article text (Markdown/CSV) from web pages for RAG/LLM use.
+- [Trade Show Exhibitor Intelligence (Apify Actor)](https://apify.com/taroyamada/trade-show-exhibitor-intelligence) - Extract trade show exhibitor and booth lists by category and region.
