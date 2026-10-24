@@ -28,3 +28,4 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [datawebot](https://www.datawebot.com) - 面向 AI 智能体的电商商品数据：跨全球网店搜索商品、列出同一商品各卖家的价格和直达链接，并在 Amazon（10 个国家）、Walmart US 等商店运行数据提取任务。提供 MCP 服务器和 REST API，可免费试用。
