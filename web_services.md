@@ -28,3 +28,4 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [Solvecha](https://solvecha.com) - 图片验证码识别 API，支持 reCAPTCHA v2 图片、文字验证码、GeeTest 滑块和 FunCAPTCHA 图片任务。
