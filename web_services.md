@@ -28,3 +28,4 @@
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
+- [CurlShot](https://curlshot.com/) - 网页截图 API，基于无头 Chromium：一次 HTTP 请求即可将任意 URL、HTML 或 Markdown 渲染为 PNG、JPEG、WebP、PDF 或滚动视频，并提供 MCP 服务器供 AI 代理使用。
