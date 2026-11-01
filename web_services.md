@@ -25,6 +25,7 @@
 - [SerpApi](https://serpapi.com/) - 访问搜索引擎结构化搜索结果的实时 API。
 - [ScrapingAnt](https://scrapingant.com/) - 具有数千个住宅代理和无头 Chrome 集群的 Web Scraping API。
 - [Xquik](https://xquik.com) - X 数据 API，提供搜索、帖子、用户资料、关注者、媒体、监控和 Webhook。Not affiliated with X Corp.
+- [LurkAPI](https://lurkapi.com) - 社交媒体数据 API：以 JSON 返回 TikTok、Instagram、YouTube、Reddit、X 等 16 个平台的公开资料、帖子、评论、视频字幕和广告库结果。
 - [Zyte(Scrapinghub)](https://www.zyte.com/) - Web 数据提取服务和平台，也是 Scrapy 的主要维护者。
 - [ProxiesAPI](https://proxiesapi.com/) - 具有自动重试、验证码处理和 JavaScript 渲染的旋转代理 API。
 - [ZenRows](https://www.zenrows.com/) - Web Scraping API 和代理服务器，可绕过任何反机器人解决方案，同时提供 JavaScript 渲染、旋转代理和地理定位。
